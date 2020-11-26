@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    body {
+      width: 1200px;
+
+    }
+
+    .header {
+      display: flex;
+      width: 1200px;
+      background-color: rgb(5, 45, 71);
+      justify-content: space-between;
+      padding: 40px 220px;
+      box-sizing: border-box;
+      position: fixed;
+      top: 0;
+      z-index: 1;
+    }
+
+    .header a {
+      text-decoration: none;
+    }
+
+    .header .site_name a {
+      color: white;
+      font-size: 25px;
+    }
+
+    .header .header_link {
+      margin-top: 10px;
+    }
+
+    .header .header_link a {
+      font-size: 10px;
+      margin: 15px;
+    }
+
+    .header .header_link a:first-child {
+      color: white;
+    }
+
+    .header .header_link a:nth-child(n+2) {
+      color: rgb(87, 87, 86);
+    }
+
+    .header .tel a {
+      color: white;
+    }
+
+    .open_the_world_of_opportunities {
+      width: 100%;
+      background-color: rgb(5, 45, 71);
+      text-align: center;
+      position: relative;
+      margin-top: 108px;
+    }
+
+    .open_the_world_of_opportunities .wrap {
+      position: absolute;
+      top: 80px;
+    }
+
+    .open_the_world_of_opportunities img {
+      width: 550px;
+      margin-top: 220px;
+      vertical-align: middle;
+    }
+
+    .open_the_world_of_opportunities .wrap .article h1 {
+      color: white;
+      font-size: 38px;
+    }
+
+    .open_the_world_of_opportunities .wrap .article p {
+      color: white;
+      font-size: 14px;
+      opacity: 0.3;
+    }
+
+    .open_the_world_of_opportunities .register_buttom {
+      background-color: rgb(252, 143, 68);
+      width: 170px;
+      border-radius: 50px;
+      /* position: absolute; */
+      margin: 20px 540px;
+      /* margin用auto無法水平置中 */
+    }
+
+    .register_buttom a {
+      color: white;
+      font-size: 12px;
+      line-height: 35px;
+      text-decoration: none;
+    }
+
+    .Studying_Foreign_Languages {
+      width: 100%;
+      display: flex;
+      padding: 70px 200px 0 220px;
+      box-sizing: border-box;
+      background-color: rgb(231, 242, 245);
+    }
+
+    .Studying_Foreign_Languages .register_buttom {
+      background-color: rgb(252, 143, 68);
+      width: 160px;
+      border-radius: 23.5px;
+      position: absolute;
+      text-align: center;
+      margin: 10px 0;
+
+    }
+
+    .Studying_Foreign_Languages .article {
+      width: 40%;
+    }
+
+    .Studying_Foreign_Languages .article .item {
+      width: 130%;
+    }
+
+    .Studying_Foreign_Languages .article p:nth-child(1) {
+      font-size: 32px;
+      padding-bottom: 30px;
+      color: rgb(111, 110, 110);
+    }
+
+    .Studying_Foreign_Languages .article p:nth-child(2) {
+      font-size: 25px;
+      padding-bottom: 20px;
+      color: rgb(115, 111, 105);
+    }
+
+    .Studying_Foreign_Languages .article p:nth-child(3) {
+      font-size: 14px;
+      padding-bottom: 20px;
+      color: rgb(150, 148, 145);
+    }
+
+    .Studying_Foreign_Languages_pic {
+      width: 430px;
+      padding-top: 40px;
+      padding-left: 60px;
+    }
+
+    .Studying_Foreign_Languages_pic img {
+      width: 100%;
+      vertical-align: middle;
+    }
+
+    .reasons_to_start_learn_language {
+      width: 100%;
+    }
+
+    .reasons_to_start_learn_language>p {
+      font-size: 32px;
+      text-align: center;
+      padding-top: 70px;
+      color: rgb(103, 99, 97);
+    }
+
+    .reason_article p:nth-child(1) {
+
+      color: rgb(148, 147, 146);
+    }
+
+    .reason_article p:nth-child(2) {
+      padding-top: 15px;
+      font-size: 12px;
+      color: rgb(148, 147, 146);
+    }
+
+    .reasons_to_start_learn_language img {
+      width: 45px;
+    }
+
+    .reason_wrap {
+      padding: 30px 0 40px;
+    }
+
+    .reason_row {
+      display: flex;
+      padding: 0 20px 0px;
+      justify-content: center;
+    }
+
+    .reason {
+      width: 380px;
+      display: flex;
+      padding: 0 10px 50px;
+      box-sizing: border-box;
+    }
+
+    .reason_article {
+      padding-left: 20px;
+    }
+
+    .book_center {
+      width: 100%;
+      padding: 100px 200px;
+      box-sizing: border-box;
+      display: flex;
+      background-color: rgb(234, 242, 246);
+    }
+
+    .book_center_pic img {
+      width: 350px;
+    }
+
+    .book_center_article {
+      width: 450px;
+      padding-left: 80px;
+      box-sizing: border-box;
+    }
+
+    .book_center_article p:nth-child(1) {
+      font-size: 32px;
+      line-height: 45px;
+    }
+
+    .book_center_article p:nth-child(2) {
+      font-size: 25px;
+      padding: 20px 0;
+      color: gray;
+    }
+
+    .book_center_article p:nth-child(3) {
+      font-size: 14px;
+      color: gray;
+    }
+
+    .get_your_free_e-mail_course {
+      width: 100%;
+      background-color: rgb(1, 60, 89);
+      text-align: center;
+      padding-top: 70px;
+    }
+
+    .get_your_free_e-mail_course p:nth-child(1) {
+      color: white;
+      font-size: 33px;
+      line-height: 60px;
+    }
+
+    .get_your_free_e-mail_course p:nth-child(2) {
+      color: rgb(80, 164, 201);
+      font-size: 14px;
+    }
+
+    .get_your_free_e-mail_course .input_row {
+      padding: 25px 0 70px;
+    }
+
+    .get_your_free_e-mail_course .input_row input {
+      margin: 0 10px;
+    }
+
+    .get_your_free_e-mail_course .input_row input:nth-child(1) {
+      width: 320px;
+      height: 35px;
+      border-radius: 18px;
+      border: none;
+      font-size: 12px;
+
+    }
+
+    .get_your_free_e-mail_course .input_row :nth-child(2) {
+      width: 180px;
+      height: 35px;
+      border-radius: 18px;
+      border: none;
+      background-color: rgb(252, 143, 68);
+      color: white;
+    }
+
+    .what_our_student_are_saying {
+      background-color: rgb(230, 111, 50);
+      text-align: center;
+      width: 100%;
+      height: 400px;
+      box-sizing: border-box;
+      padding-top: 80px;
+    }
+
+    .what_our_student_are_saying p {
+      color: white;
+    }
+
+    .what_our_student_are_saying p:nth-child(1) {
+      font-size: 32px;
+    }
+
+    .what_our_student_are_saying img {
+      width: 25px;
+      padding: 20px;
+    }
+
+    .what_our_student_are_saying p:nth-child(3) {
+      font-size: 18px;
+      width: 500px;
+      margin: 0 auto;
+    }
+
+    .what_our_student_are_saying p:nth-child(4) {
+      font-size: 14px;
+      padding-top: 20px;
+    }
+
+    .footer {
+      width: 100%;
+      background-color: rgb(39, 39, 39);
+      /* padding: 25px 160px 25px 220px; */
+      box-sizing: border-box;
+
+
+    }
+
+    .footer .wrap {
+      width: 100%;
+      padding: 0px 160px 0px 220px;
+      box-sizing: border-box;
+      justify-content: space-between;
+      display: flex;
+    }
+
+    .footer .wrap a {
+      text-decoration: none;
+    }
+
+    .footer .wrap .site_name a {
+      color: white;
+      font-size: 25px;
+      line-height: 70px;
+    }
+
+    .footer .wrap .footer_link {
+      padding-top: 30px;
+    }
+
+    .footer .wrap .footer_link a {
+      font-size: 10px;
+      margin: 15px;
+    }
+
+    .footer .wrap .footer_link a:first-child {
+      color: white;
+    }
+
+    .footer .wrap .footer_link a:nth-child(n+2) {
+      color: rgb(87, 87, 86);
+    }
+
+    .footer .wrap .icon {
+      padding-top: 35px;
+    }
+
+    .footer .wrap .icon a img {
+      width: 15px;
+      margin: 5px;
+      vertical-align: middle;
+    }
+
+    .privacy_policyitem {
+      padding: 15px 200px 15px 220px;
+      border-top: 1px solid rgb(83, 83, 83);
+      font-size: 10px;
+      color: rgb(88, 88, 88);
+    }
+
+    .privacy_policyitem span {
+      font-size: 10px;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="header">
+    <div class="site_name">
+      <a href="#">Langerba</a>
+    </div>
+    <div class="header_link">
+      <a href="#">Home</a>
+      <a href="#">About us</a>
+      <a href="#">Courses</a>
+      <a href="#">Gallery</a>
+      <a href="#">Contact US</a>
+    </div>
+    <div class="tel">
+      <a href="#">+1 800 598 78 87</a>
+    </div>
+
+  </div>
+
+  <div class="open_the_world_of_opportunities">
+    <img src="/images/image.png" alt="背景">
+    <div class="wrap">
+      <div class="article">
+        <h1>Open the world of opportunities!</h1>
+        <p>Learn to communicate with the world around you.</p>
+      </div>
+
+      <div class="register_buttom">
+        <a href="#">REGISTER NOW</a>
+      </div>
+    </div>
+
+
+  </div>
+
+  <div class="Studying_Foreign_Languages">
+    <div class="article">
+      <div class="item">
+        <p>Studying Foreign Languages</p>
+      </div>
+
+      <p>Every foreign language has its own momentum</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam necessitatibus temporibus sed, nihil, ducimus
+        voluptas quam molestias assumenda maiores tempore deleniti aut, sit at. Ut rem
+        labore recusandae. Eius consequatur omnis maxime labore recusandae ut libero in, impedit ipsa </p>
+      <div class="register_buttom">
+        <a href="#">REGISTER NOW</a>
+      </div>
+    </div>
+    <div class="Studying_Foreign_Languages_pic">
+      <img src="/images/page01_img02.png" alt="文章圖片">
+    </div>
+
+
+  </div>
+
+  <div class="reasons_to_start_learn_language">
+    <p>6 reasons to start learn language</p>
+    <div class="reason_wrap">
+      <div class="reason_row">
+        <div class="reason">
+          <div class="reason_pic">
+            <img src="/images/149229.svg" alt="圖片">
+          </div>
+          <div class="reason_article">
+            <p>English is spoken all over the world</p>
+            <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident,
+              eligendi!consectetur adipisicing elit. Ratione nostrum quidem vitae nihil vero illum
+              incidunt distinctio officiis!</p>
+          </div>
+        </div>
+        <div class="reason">
+          <div class="reason_pic">
+            <img src="/images/1115885.svg" alt="圖片">
+          </div>
+          <div class="reason_article">
+            <p>International business requires English</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi rerum incidunt non, commodi odit provident
+              quibusdam. Dolores, pariatur.</p>
+          </div>
+        </div>
+      </div>
+      <div class="reason_row">
+        <div class="reason">
+          <div class="reason_pic">
+            <img src="/images/3488244.svg.png" alt="圖片">
+          </div>
+          <div class="reason_article">
+            <p>Education and research opportunities</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde consectetur aliquam cum praesentium
+              exercitationem maiores vitae voluptatem ipsum.</p>
+          </div>
+        </div>
+        <div class="reason">
+          <div class="reason_pic">
+            <img src="/images/1109485.svg" alt="圖片">
+          </div>
+          <div class="reason_article">
+            <p>A perfect language for traveling</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit inventore officia hic doloribus
+              necessitatibus porro numquam error impedit?</p>
+          </div>
+        </div>
+      </div>
+      <div class="reason_row">
+        <div class="reason">
+          <div class="reason_pic">
+            <img src="/images/1116124.svg" alt="圖片">
+          </div>
+          <div class="reason_article">
+            <p>The language of cinema and music</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero recusandae laboriosam in cupiditate
+              provident dignissimos at nostrum deserunt.</p>
+          </div>
+        </div>
+        <div class="reason">
+          <div class="reason_pic">
+            <img src="/images/1884858.svg" alt="圖片">
+          </div>
+          <div class="reason_article">
+            <p>Hemingway and Harry Potter</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam facilis ex illo voluptatem enim ipsa eius
+              unde dolorem?</p>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+  </div>
+
+  <div class="book_center">
+    <div class="book_center_pic">
+      <img src="/images/page01_img03.png" alt="圖片">
+    </div>
+    <div class="book_center_article">
+      <p>Our Book Center is an offical distributor of Oxford University Press</p>
+      <p>We offer a wide range of books for teachers anf students</p>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere debitis odit quisquam ratione quam modi
+        voluptatibus, totam aperiam mollitia deleniti perspiciatis!</p>
+    </div>
+
+
+
+
+  </div>
+
+  <div class="get_your_free_e-mail_course">
+    <p>Get your free e-mail course!</p>
+    <p>30 lessons per week, Upper-Intermediate to AAdvanced levels, course length:4,8-12 weeks</p>
+    <div class="input_row">
+      <input type="text" placeholder="    Enter your e-mail">
+      <input type="button" value="I WANT A COURSE">
+    </div>
+
+  </div>
+
+  <div class="what_our_student_are_saying">
+    <p>What our students are saying</p>
+    <img src="/images/page01_img04.png" alt="符號圖片">
+    <p>Consectetur adipisicing elit. Suscipit, aliquam magnam. Magnam, quia! Quibusdam at
+      aliquid consectetur, hic excepturi eveniet soluta perferendis ullam sequi, quam aperiam? Sunt illum </p>
+    <p>Autrory Little</p>
+  </div>
+
+  <div class="footer">
+
+
+    <div class="wrap">
+      <div class="site_name">
+        <a href="#">Langerba</a>
+      </div>
+      <div class="footer_link">
+        <a href="#">Home</a>
+        <a href="#">About us</a>
+        <a href="#">Courses</a>
+        <a href="#">Gallery</a>
+        <a href="#">Contact US</a>
+      </div>
+      <div class="icon">
+        <a href="#"><img src="/images/fb.svg"></a>
+        <a href="#"><img src="/images/tw.svg"></a>
+        <a href="#"><img src="/images/g.svg"></a>
+        <a href="#"><img src="/images/ig.svg"></a>
+        <a href="#"><img src="/images/in.svg"></a>
+      </div>
+    </div>
+
+
+
+    <div class="privacy_policyitem">
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, Labore, tempora quo ab, totam
+        asperiore svoluptate? Labore, tempora quo ab, totam
+        cumque esse asperiores quaerat animi corrupti aperiam temporibus! Cumque rerum voluptatem laboriosam, aliquam
+        magnam quisquam.<span>Privacy Policyitem</span> </p>
+    </div>
+
+  </div>
+
+</body>
+
+</html>

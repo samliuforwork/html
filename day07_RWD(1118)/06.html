@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        [class*="wrap-"]{
+            padding: 0 15px;
+        box-sizing: border-box;
+        }
+        .wrap{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        img{
+            width: 100%;
+        }
+        .col-1{width: 8.333333%;}
+        .col-2{width: 16.666667%}
+        .col-3{width: 25%;}
+        .col-4{width: 33.333333%}
+        .col-5{width: 41.666667%}
+        .col-6{width: 50%;}
+        .col-7{width: 58.333333%}
+        .col-8{width: 66.666667%}
+        .col-9{width: 75%;}
+        .col-10{width: 83.333333}
+        .col-11{width: 91.666667}
+        .col-12{width: 100%;}
+
+        @media screen and (min-width: 768px ){
+            .col-md-1{width: 8.333333%;}
+            .col-md-2{width: 16.666667%}
+            .col-md-3{width: 25%;}
+            .col-md-4{width: 33.333333%}
+            .col-md-5{width: 41.666667%}
+            .col-md-6{width: 50%;}
+            .col-md-7{width: 58.333333%}
+            .col-md-8{width: 66.666667%}
+            .col-md-9{width: 75%;}
+            .col-md-10{width: 83.333333}
+            .col-md-11{width: 91.666667}
+            .col-md-12{width: 100%;}    
+        }
+
+        @media screen and (min-width: 992px ){
+            .col-ig-1{width: 8.333333%;}
+            .col-ig-2{width: 16.666667%}
+            .col-ig-3{width: 25%;}
+            .col-ig-4{width: 33.333333%}
+            .col-ig-5{width: 41.666667%}
+            .col-ig-6{width: 50%;}
+            .col-ig-7{width: 58.333333%}
+            .col-ig-8{width: 66.666667%}
+            .col-ig-9{width: 75%;}
+            .col-ig-10{width: 83.333333}
+            .col-ig-11{width: 91.666667}
+            .col-ig-12{width: 100%;}    
+        }
+
+        @media screen and (min-width: 1000px ){
+            .col-xl-1{width: 8.333333%;}
+            .col-xl-2{width: 16.666667%}
+            .col-xl-3{width: 25%;}
+            .col-xl-4{width: 33.333333%}
+            .col-xl-5{width: 41.666667%}
+            .col-xl-6{width: 50%;}
+            .col-xl-7{width: 58.333333%}
+            .col-xl-8{width: 66.666667%}
+            .col-xl-9{width: 75%;}
+            .col-xl-10{width: 83.333333}
+            .col-xl-11{width: 91.666667}
+            .col-xl-12{width: 100%;}    
+        }
+
+        @media screen and (min-width: 1200px){
+            .col-xxl-1{width: 8.333333%;}
+            .col-xxl-2{width: 16.666667%}
+            .col-xxl-3{width: 25%;}
+            .col-xxl-4{width: 33.333333%}
+            .col-xxl-5{width: 41.666667%}
+            .col-xxl-6{width: 50%;}
+            .col-xxl-7{width: 58.333333%}
+            .col-xxl-8{width: 66.666667%}
+            .col-xxl-9{width: 75%;}
+            .col-xxl-10{width: 83.333333}
+            .col-xxl-11{width: 91.666667}
+            .col-xxl-12{width: 100%;}    
+        }
+    </style>
+<body>
+
+    <div class="box">
+            <div class="wrap">
+                <div class="col-12 col-md-4"><img src="https://picsum.photos/300/200/?random=1"></div>
+                <div class="col-12 col-md-4"><img src="https://picsum.photos/300/200/?random=1"></div>
+                <div class="col-12 col-md-4"><img src="https://picsum.photos/300/200/?random=1"></div>
+            </div>
+            <div class="wrap">
+                <div class="col-12 col-ig-6"><img src="https://picsum.photos/300/200/?random=1"></div>
+                <div class="col-12 col-ig-6"><img src="https://picsum.photos/300/200/?random=1"></div>
+            </div>
+
+            <div class="wrap">
+                <div class="col-12, col-xl-2"><img src="https://picsum.photos/300/200/?random=1"></div>
+                <div class="col-12, col-xl-2"><img src="https://picsum.photos/300/200/?random=1"></div>
+                <div class="col-12, col-xl-2"><img src="https://picsum.photos/300/200/?random=1"></div>
+                <div class="col-12, col-xl-2"><img src="https://picsum.photos/300/200/?random=1"></div>
+                <div class="col-12, col-xl-2"><img src="https://picsum.photos/300/200/?random=1"></div>
+                <div class="col-12, col-xl-2"><img src="https://picsum.photos/300/200/?random=1"></div>
+            </div>
+
+
+        <div class="wrap">
+            <div class="col">
+                <div class="col-6 col-ig-4 col-xl-3 col-xll-3">
+                  <div class="item">  <img src="https://picsum.photos/300/200/?random=1"><h3>title</h3><p>專區隨着是的大多最快，畢業女朋友成功是什麼，申請兒子，看看不如美麗一片，深深即可筆者表現，關係最終。</p>
+                  </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="col-6 col-ig-4 col-xl-3 col-xll-3">
+                  <div class="item">  <img src="https://picsum.photos/300/200/?random=1"><h3>title</h3><p>專區隨着是的大多最快，畢業女朋友成功是什麼，申請兒子，看看不如美麗一片，深深即可筆者表現，關係最終。</p>
+                  </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="col-6 col-ig-4 col-xl-3 col-xll-3">
+                  <div class="item">  <img src="https://picsum.photos/300/200/?random=1"><h3>title</h3><p>專區隨着是的大多最快，畢業女朋友成功是什麼，申請兒子，看看不如美麗一片，深深即可筆者表現，關係最終。</p>
+                  </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="col-6 col-ig-4 col-xl-3 col-xll-3">
+                  <div class="item">  <img src="https://picsum.photos/300/200/?random=1"><h3>title</h3><p>專區隨着是的大多最快，畢業女朋友成功是什麼，申請兒子，看看不如美麗一片，深深即可筆者表現，關係最終。</p>
+                  </div>
+                </div>
+            </div>
+    </div>
+
+    <div class="wrap">
+        <div class="col-6, col-xxl-12">
+            <div class="items">
+                <img src="https://picsum.photos/200/200/?random=2">
+            </div>
+
+            <div class="text">
+                <h3>title</h3>
+                <p>圖象資料有點遠軍事和你是一個過來一場會員大量反正天使神經信號，近期觀看穿著，接近同意現有，形成事故，檢測分公司是一種擔心，機制上面造型地區落實歡迎光臨記住項目，白色老婆吸收家庭郵遞區號力道，你也多年劇情僅供博士姐姐投資長沙所在地孩子設備給你，估計工作也會。</p>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
+
+    

@@ -1,0 +1,143 @@
+.head{
+    width: 100%;
+}
+.head img{
+    width: 100%;
+}
+.index, .hot, .sub, .originals, .media, .record, .film, .movie,.later{
+    display: flex;
+    width: 235px;
+}
+
+.index:hover, .hot:hover, .sub:hover, .originals:hover, .media:hover, .record:hover, .film:hover, .movie:hover,.later:hover{
+    display: flex;
+    width: 235px;
+    background-color:rgb(242, 242, 242) ;
+}
+.index:active, .hot:active, .sub:active, .originals:active, .media:active, .record:active, .film:active, .movie:active,.later:active{
+    display: flex;
+    width: 235px;
+    background-color: rgb(214, 214, 214);
+}
+.menu p {
+    margin: 8px;
+    /* padding: -5px */
+
+}
+.menu img {
+    margin: 3px 20px;
+    width: 30px;
+    height: 30px;
+}
+
+.wrap{
+    display: flex;
+}
+.subscribe {
+    display: flex
+}
+.subscribe .pic img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 10px 20px 20px 30px;
+}
+.subscribe p {
+    margin: 20px 20px;
+    width: 130px;
+    margin: 30px 0px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #000;
+}
+button {
+    width: 73px;
+    margin: 20px 28px;
+    background-color: #ECECEC;
+    color:rgb(60, 60, 60);
+    padding: 10px 10px;
+    border: 0;
+}
+.bell .pic img {
+    width: 25px;
+    height: 100%;
+    margin: 25px -12px;
+}
+.main{
+    width: 417px;
+    background-color: #F9F9F9;
+    /* margin: 10px; */
+}
+.main>img{
+    width: 360px;
+    margin: 35px ;
+}
+h2{
+    margin: -30px 40px;
+    font-weight: normal;
+}
+.main>p {
+    margin: 40px 28px 10px 40px;
+    color: rgb(96, 96, 96);
+    font-size: 14px;
+}
+
+.main.icon {
+    display: flex;
+    margin: 0px 30px;
+}
+
+.no {
+    width: 20px;
+}
+.no p{
+    text-align:center;
+    line-height: 75px;
+}
+
+h6 {
+    font-weight: normal;
+    font-size: 16px;
+    margin: 18px 0px 40px;
+
+}
+
+.pic img{
+    margin: 20px 10px;
+    width: 120px;
+}
+.content{
+    background-color: #F1F1F1;
+    width: 1000px;
+
+}
+.content .wrap{
+    margin-top: 8px;
+    height: 100px;
+    padding: 5px;
+}
+.content .wrap:hover{
+    background-color: rgb(229, 229, 229);
+    height: 100px;
+}
+.title p{
+    margin: -30px 0px;
+    color: rgb(96,96, 119);
+    font-size: 13px;
+}
+.title p:hover{
+    margin: -30px 0px;
+    color: rgb(3,3, 32);
+}
+p, h2, h6{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+hr {
+    border-width: 1px;
+    border-color: rgb(229, 229, 229);
+    border-style: none solid solid solid;
+    width: 350px;
+    margin-top: 20px;
+
+}

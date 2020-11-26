@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .wrap{
+            /* width: 1400px; */
+            border: red 2px solid;
+        }
+        .mv{
+            width: 50%;
+            background-color: #008000;
+            position:relative;
+        }
+
+        .mv img{
+            width: 100%;
+            vertical-align: middle; 
+            /* 去除圖片下方的空間 */
+        }
+        
+        .mv iframe{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="mv">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/HEBqWJKEUIU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <img src="p1.png" alt="none">
+        </div>
+    </div>
+
+</body>
+</html>

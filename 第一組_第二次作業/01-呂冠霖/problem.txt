@@ -1,0 +1,7 @@
+分析:約20m
+切版:約5h
+細節修正:約1h
+1.input[type=text]被點選後出現的border，無法消除
+.container.email-course input[type=text]:focus {border: none;} <<無效果
+2.input[type=text]輸入起始點太靠近左邊border，被圓角遮住
+3.上方導覽列捲動時的變化

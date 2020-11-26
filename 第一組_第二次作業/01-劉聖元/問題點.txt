@@ -1,0 +1,2 @@
+1.圖片svg檔案指令太長，造成html太龐雜
+2.What our students are saying那頁，還不知道怎麼利用白點達到切換效果

@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+/* page1_Open The World */
+        .OTW_page{
+            width: 100%;
+            height: 0;
+            padding-bottom: 36.875%;
+            background-image: url('/elements/world_bg.png');
+            background-repeat:no-repeat;
+            background-size: 100% auto;
+            background-color: rgb(0, 60, 90);
+            position: relative;
+        }
+        .OTW-col{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 15%;
+            text-align: center;
+        }
+        .slogan_open, .email_slogan{
+            font-size: 2.5rem;
+            color: #ffffff;
+            line-height: 2.8rem;
+        }
+        .slogan_learn{
+            color: #66B8E0;
+            font-size: 1em;
+        }
+        .OTW_register{
+            display: flex;
+            align-items: center;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin-left: auto;
+            margin-right: auto ;
+            margin-top: 2%;
+            border-radius: 10% / 50%;
+            width: 16.666667%;
+            height: 11.30%;
+            background-color: #fc8f44;
+            border: white 2px solid;
+        }
+        .OTW_register a{
+            margin: 0 25%;
+            text-decoration: none;
+            color: white;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 0.5rem;
+            font-family: sans-serif;
+        }
+
+/* page2_Studying Foreign Languages */
+
+        .SFL_describe{
+            width: 100%;
+            height: 100%;
+        }
+/* 這邊要記得，圖片已經設定為寬高100% */
+        /* img{
+            width: 100%;
+            height: 100%;
+        } */
+
+        @media screen and (min-width: 768px){
+            .SFL_describe{
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .SFL-col-6-pic{
+                width: 50%;
+                background-color:red;
+            }
+            .SFL-col-6-text{
+                width: 50%;
+                background-color:green;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+            }
+        }
+
+        .SFL_describe_every{
+            color: #5a544f;
+            font-size: 32px;
+            line-height: 42px;
+            margin: 15px 0;
+        }
+
+        .SLF_register{
+            margin: 3% 0 1% 0;
+            border-radius: 10% / 50%;
+            width: 100%;
+            height: 11.30%;
+            background-color: #fc8f44;
+            text-align: center;
+            border: white 2px solid;
+        }
+        .SLF_register a{
+            text-decoration: none;
+            color: white;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 1rem;
+            font-family: sans-serif;
+        }
+
+
+/* page3_reasons */
+        .reasons_row-slogan{
+            font-size: 2rem;
+            font-weight: 300;
+            color: #282421;
+            line-height: 2rem;
+            background-color: green;
+            text-align: center;
+        }
+
+        .reason_col-6{
+            width: 100%;
+            height: 100%;
+            background-color: red;
+        }
+        .reason_col-6_pic img{
+            width: 100%;            
+        }
+        .reason_col-6_slogan{
+            font-size: 3rem;
+            font-weight: 300;
+            color: #282421;}
+        
+
+        @media screen and (min-width: 1000px){
+            .reason_col-6{
+            height: 50%;
+            height: 50%;
+            background-color: green;
+            display: flex;
+            flex-wrap: wrap;
+            }
+            .reason_col-6_pic{
+            width: 20%;
+            }
+            .reason_col-6_text{
+            width: 80%;
+            }
+            .reason_col-6_slogan{
+            font-size: 2rem;
+            }
+
+        }
+
+        @media screen and (min-width: 1200px){
+            .reasons_row-6{
+                display: flex;
+            }
+            .reason_col-6{
+            width: 50%;
+            height: 50%;
+            background-color: blue;
+            display: flex;
+        }
+            .reason_col-6_slogan{
+            font-size: 1.5rem;
+            }
+
+
+
+
+
+/* page4_OurBookCenter */
+
+        .OBC_describe{
+            width: 100%;
+            height: 100%;
+        }
+
+
+        @media screen and (min-width: 768px){
+            .OBC_describe{
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .OBC-col-6-pic{
+                width: 50%;
+                background-color:red;
+            }
+            .OBC-col-6-text{
+                width: 50%;
+                background-color:green;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+            }
+        }
+
+        .OBC_describe_Our{
+            color: #5a544f;
+            font-size: 32px;
+            line-height: 42px;
+            margin: 15px 0;
+        }
+
+        .OBC-col-6-pic{
+            order: -1;
+        }
+
+
+/* page5_email */
+        .email_page{
+            width: 1200px;
+            height: 378.9px;
+            background-color: rgb(0, 60, 90);
+            position: relative;
+        }
+        .email_block{
+            position: absolute;
+            top: 0;
+            right: 20px;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            height: 100px;
+            width: 600px;
+            text-align: center;
+        }
+        .email_describe{
+            color: #66B8E0;
+            margin: 15px 0;
+        }
+        .email_wrap{
+            display:flex;
+        }
+        .email_wrap input{
+            height: 40px;
+            width: 400px;
+            border-radius: 5% / 50%;
+            border: solid 1px orange;
+        }
+        .email_block a{
+            display: block;
+            border-radius: 10% / 50%;
+            width: 200px;
+            height: 40px;
+            background-color: #fc8f44;
+            color: white;
+            text-align: center;
+            border: white 2px solid;
+            line-height: 40px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 15px;
+            font-family: sans-serif;
+        }
+
+/* page6_students */
+        .students_page{
+            width: 1200px;
+            height: 592.7px;
+            background-color:#fc8f44;
+            position: relative;
+        }
+        .students_block{
+            position: absolute;
+            width: 600px;
+            height: 400px;
+            left: 0;
+            right: 0;
+            top: 60px;
+            bottom: 0;
+            margin: auto;
+            align-items: center;
+        }
+        .students_slogan{
+            margin-left: 60px;
+            font-size: 40px;
+            color: #ffffff;
+            line-height: 45px;
+        }
+        .students_describe{
+            margin-top: 30px;
+            color: white;
+            font-size: 25px;
+            font-style: italic;
+            font-weight: 300;
+            padding: 10px;
+        }
+
+        .students_name{
+            color: white;
+            font-size: 17px;
+            font-style: 'Open Sans', sans-serif ;
+            font-weight: 700;
+            margin: 10px 0;
+            margin-left: 240px;
+        }
+        
+        .students_circle{
+            display: flex;
+            width: 80px;
+            margin-left: 250px;
+        }
+        .students_circle a{
+            display: block;
+            width: 10px;
+            height: 10px;
+            background-color: white;
+            opacity: 50%;
+            border-radius: 100%;
+            margin: 3px;
+            
+        }
+        .students_circle span{
+            display: block;
+            width: 10px;
+            height: 10px;
+            background-color: white;
+            border-radius: 100%;
+            margin: 3px;
+        }
+        .students_block img{
+            width: 50px;
+            height: 50px;
+            margin-left: 45%;
+            margin-top: 20px;
+        }
+
+/* Footer */
+        .footer{
+            width: 1200px;
+            height: 150px;
+            background-color: rgb(46, 45, 45);
+        }
+        .footer_nav{
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            line-height: 40px;
+            border-bottom: 0.5px gray solid;
+        }
+        .footer_logo a, .header_logo a{
+            font-size: 40px;
+            color: white;
+            text-decoration: none;
+        }
+        .footer_nav_describe a, .header_nav_describe a{
+            margin-left: 10px;
+            color: white;
+            text-decoration: none;
+        }
+        .footer_nav_describe a+a, .header_nav_describe a+a{
+            margin-left: 10px;
+            color: gray;
+            text-decoration: none;
+        }
+        .footer_nav_icon img{
+            width: 20px;
+            height: 20px;
+            margin: 0 5px;
+        }
+        .privacy_policy{
+            margin-top: 15px;
+            color: gray; 
+        }
+        .privacy_policy a{
+            text-decoration: none;
+            color: white;
+        }
+
+/* Header */
+        .header_nav{
+            position: fixed;
+            width: 100%;
+            background-color: rgb(0, 60, 90);
+            display: flex;
+            justify-content: space-around;
+            padding: 1.25% 2%;
+            line-height: 40px;
+            z-index: 1;
+        }
+        .header_nav_icon a{
+            text-decoration: none;
+            color: white;
+            opacity: 50%;
+        }
+
+/* Hamburger */
+
+        header{
+            height: 50px;
+            background-color: #ccc;
+            position: relative;
+        }
+
+        .lgo{}
+        .logo img{
+            vertical-align: middle;
+        }
+        .menu_btn{
+            width: 40px;
+            height: 40px;
+            background-color: #000;
+            display: blcok;
+            position: absolute;
+            top: 0;
+            left: 2%;
+        }
+        .menu_btn span{
+            opacity: 0;
+            width: 1px;
+            height: 1px;
+            display: block;
+            overflow: hidden;
+        }
+        .menu_btn::before{
+            content: '';
+            position: absolute;
+            height: 2px;
+            width: 36px;
+            background-color: #aaa;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            box-shadow: 0px 8px 0px #aaa;
+                        0px -8px 0px #aaa;
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+<input type="checkbox" name="" id="menu_control">
+
+<div class="header">
+    <h1 class="logo">
+        <a href="#">"https://picsum.photos/60/40/?random=1"</a>
+    </h1>
+    <label for="menu_control" class="menu_btn">
+        <span>選單</span>
+    </label>
+    <nav>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+    </nav>
+</div>
+
+
+
+
+
+
+
+原先版本
+<div class="box">
+    <div class="header_nav">
+            <div class="header_logo"><a href="https://template58850.motopreview.com/">Langerba</a></div>
+            <nav class="header_nav_describe">
+                <a href="https://template58850.motopreview.com/">Home</a>
+                <a href="https://template58850.motopreview.com/about-us/">About us</a>
+                <a href="https://template58850.motopreview.com/courses/">Courses</a>
+                <a href="https://template58850.motopreview.com/gallery/">Gallery</a>
+                <a href="https://template58850.motopreview.com/blog/">Blog</a>
+                <a href="https://template58850.motopreview.com/contact-us/">Contact us</a>
+            </nav>
+            <nav class="header_nav_icon">
+                <a href="">+1 800 598 78 87</a>
+            </nav>
+    </div>
+    
+    <!-- page1_Open The World -->
+    <div class="OTW_page">
+        <div class="OTW-col col- slogan">
+            <div class="slogan_open">
+                <p>Open the world of opportunities!</p>
+            </div>
+
+            <div class="slogan_learn">
+                <p>Learn to communicate with the world around you.</p>
+            </div>
+
+            <div class="OTW_register">
+                <a href="https://reurl.cc/zzEv5p">register now</a>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- page2_Studying Foreign Languages -->
+    <div class="SFL_page">
+        <div class="SFL">
+                <div class="SFL-row SFL_block">
+                    <div class="SFL-col SFL_sfl">Study Foreign Languages</div>
+                </div>
+
+                <div class="SFL-row SFL_describe">
+                    <div class="SFL-col-6-text">
+                        <div><p class="SFL_describe_every">Every foreign language has its own momentum.</p></div>
+                        <div><p class="SFL_describe_The">The more you learn, the more you want to learn. Say you love Italian food and decide to study Italian. At first, it's hard. But one day you meet some Italian tourists on the bus and you understand enough to point them towards their hotel. Before you part ways, they give you their e-mail address. Now you can easily communicate with them and study some more.</p></div>
+                        <div class="SLF_register"><a href="https://reurl.cc/zzEv5p">register now</a></div>
+                    </div>
+
+                    <div class="SFL-col-6-pic">
+                        <img src="/elements/SLF_studyingman.png" alt="The picture can't be displayed.">
+                    </div>
+                </div>
+                
+        </div>
+    </div>
+
+    <!-- page3_reasons -->
+    <div class="reasons_page">
+        <div class="reasons_row-slogan"><p>6 reasons to start learn language</p></div>
+
+        <div class="reasons_row-6">
+
+            <div class="reason_col-6">
+                <div class="reason_col-6_pic"><img src="https://picsum.photos/40/40/?random=3"></div>
+                <div class="reason_col-6_text">
+                    <p class="reason_col-6_slogan">English is spoken all over the world</p>
+                    <p class="reason_col-6_describe">English is not the most widely spoken language (that title goes to Chinese), but it does come in third, after Spanish. And the number of 335 million native speakers is respectable.</p>
+                </div>
+            </div>
+
+            <div class="reason_col-6">
+                <div class="reason_col-6_pic"><img src="https://picsum.photos/40/40/?random=3"></div>
+                <div class="reason_col-6_text">
+                    <p class="reason_col-6_slogan">International business requires English</p>
+                    <p class="reason_col-6_describe">In terms of international commerce, English is the language to learn. When the Chinese do business in Egypt, the negotiations and transactions happen in English.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="reasons_row-6">
+
+            <div class="reason_col-6">
+                <div class="reason_col-6_pic"><img src="https://picsum.photos/40/40/?random=3"></div>
+                <div class="reason_col-6_text">
+                    <p class="reason_col-6_slogan">Education and research opportunities</p>
+                    <p class="reason_col-6_describe">Thinking of studying abroad or publishing a research paper? Chances are you will decide to learn English at some point along the way, or to study at your chosen institution.</p>
+                </div>
+            </div>
+
+            <div class="reason_col-6">
+                <div class="reason_col-6_pic"><img src="https://picsum.photos/40/40/?random=3"></div>
+                <div class="reason_col-6_text">
+                    <p class="reason_col-6_slogan">A perfect language for traveling</p>
+                    <p class="reason_col-6_describe">If you travel often, you’ll note signs tend to come in the local tongue first and English second. That’s because English is considered the most popular international language.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="reasons_row-6">
+        <div class="reason_col-6">
+                <div class="reason_col-6_pic"><img src="https://picsum.photos/40/40/?random=3"></div>
+                <div class="reason_col-6_text">
+                    <p class="reason_col-6_slogan">The language of cinema and music</p>
+                    <p class="reason_col-6_describe">If you like going to the movies and are a fan of sitcoms, then English should be on your list. That’s because so many of the world’s films are written and produced in English.</p>
+                </div>
+            </div>
+
+            <div class="reason_col-6">
+                <div class="reason_col-6_pic"><img src="https://picsum.photos/40/40/?random=3"></div>
+                <div class="reason_col-6_text">
+                    <p class="reason_col-6_slogan">Hemingway and Harry Potter</p>
+                    <p class="reason_col-6_describe">English has been around for a long time and English speaking writers have always been a fairly prolific bunch, both in Great Britain and the United States.</p>
+                </div>
+            </div>
+        </div>
+        </div>        
+
+
+    </div>
+
+    <!-- page4_Our Book Center -->
+    <div class="OBC_page">
+        <div class="OBC">
+            <div class="OBC-row OBC_describe">
+                <div class="OBC-col-6-text">
+                    <div><p class="OBC_describe_Our">Our Book Center is an official distributor of Oxford University Press</p></div>
+                    <div><p class="OBC_describe_We">We offer a wide range of books for teachers and students.</p></div>
+                    <div><p class="OBC_describe_TBC">The Book Center provides schools, language centers, colleges and universities with English teaching materials from Seattle to Miami. Our dealers work in almost all states.</p></div>
+                </div>
+
+                <div class="OBC-col-6-pic">
+                    <img src="/elements/OBC_globe.png" alt="The picture can't be displayed.">
+                </div>
+            </div>    
+        </div>
+    </div>
+
+    <!-- page5_emailcourse -->
+    <div class="email_page">
+        <div class="email_block">
+            <div class="email_slogan">Get your free e-mail course!
+            </div>
+            <div class="email_describe">30 lessons per week, Upper-Intermediate to Advanced levels, course length: 4, 8-12 weeks
+            </div>
+
+            <div class="email_wrap">
+                <div class="emai_items">
+                    <input type="text">
+                </div>
+                <div class="email_items">
+                    <a href="https://template58850.motopreview.com/">i want a course</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- page6_watchourstudents -->
+    <div class="students_page">
+        <div class="students_block">
+            <div class="students_slogan">What our students are saying
+            </div>
+            <div><img src="/elements/comma.png" alt="nil"></div>
+            <div class="students_describe">Two unforgettable weeks in Langerba! I would like to thank all the teachers for their positive spirit, amazing lessons and high professionalism. I will miss our lessons!</div>
+            <div class="students_name">Anthony Little</div>
+            <div class="students_circle">
+                <span></span>
+                <a href=""></a>
+                <a href=""></a>
+                <a href=""></a>
+                <a href=""></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="footer_nav">
+            <div class="footer_logo"><a href="https://template58850.motopreview.com/">Langerba</a></div>
+            <nav class="footer_nav_describe">
+                <a href="https://template58850.motopreview.com/">Home</a>
+                <a href="https://template58850.motopreview.com/about-us/">About us</a>
+                <a href="https://template58850.motopreview.com/courses/">Courses</a>
+                <a href="https://template58850.motopreview.com/gallery/">Gallery</a>
+                <a href="https://template58850.motopreview.com/blog/">Blog</a>
+                <a href="https://template58850.motopreview.com/contact-us/">Contact us</a>
+            </nav>
+            <nav class="footer_nav_icon">
+                <a href=""><img src="/elements/nav_logo_fb.png" alt="nil"></a>
+                <a href=""><img src="/elements/nav_logo_google.png" alt="nil"></a>
+                <a href=""><img src="/elements/nav_logo_twitter.png" alt="nil"></a>
+                <a href=""><img src="/elements/nav_logo_linkedin.png" alt="nil"></a>
+                <a href=""><img src="/elements/nav_logo_IG.png" alt="nil"></a>
+            </nav>
+            
+        </div>
+        <div class="privacy_policy">2016. All Langerba financings are subject to eligibility, credit and underwriting approval. The programs advertised on this page are not a commitment or guarantee from Langerba to provide funds. Programs, rates and other terms & conditions on this page are subject to change without notice.<a href="https://template58850.motopreview.com/privacy-policy/">Privacy Policy</a>
+        </div>
+    </div>>
+</div>
+
+
+</body>
+</html>

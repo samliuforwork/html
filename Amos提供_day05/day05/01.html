@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style type="text/css">
+		.wrap{
+			height: 400px;
+			background-color: #ccc;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			/*flex-flow: row wrap;*/
+			/*justify-content: center;*/
+			/*align-items: flex-end;*/
+			align-content: center;
+		}
+		.item{
+			width: 160px;
+			height: 100px;
+			margin: 2px;
+			font-size: 40px;
+			color: #fff;
+		}
+		.item1{ background-color: green;}
+		.item2{ background-color: red; }
+		.item3{ background-color: blue; }
+		.item4{ background-color: #fa0; }
+		.item5{ background-color: #af0; }
+		.item6{ background-color: #0af; }
+		.item1,.item2,.item3{ 
+			/*margin-left: auto;*/
+			/*margin-right: auto;*/
+		}
+		.item3,.item4,.item6{
+			order:1;
+		}
+		.item3,.item4{
+			margin-top: -48px;
+		}
+		.item5{
+			height: 150px;
+		}
+		.item6{
+			height: 50px;
+		}
+	</style>
+</head>
+<body>
+	
+	<div class="wrap">
+		<div class="item item1">1</div>
+		<div class="item item2">2</div>
+		<div class="item item3">3</div>
+		<div class="item item4">4</div>
+		<div class="item item5">5</div>
+		<div class="item item6">6</div>
+	</div>
+
+
+
+</body>
+</html>

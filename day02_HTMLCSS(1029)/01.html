@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form>
+        <label for="user_name">姓名</label>
+        <input type="text" id="user_name">
+        <br>
+        <label>
+            姓名
+            <input type="text">
+        </label>
+
+        <br>
+        <label for="email">信箱</label>
+        <input type="email" id="email">
+
+        <br>
+        <label for="tel">電話</label>
+        <input type="tel" id="tel">
+
+        <br>
+        <label for="number">數字</label>
+        <input type="number" id="number">
+
+        <br>
+        <label for="time">time時間</label>
+        <input type="time" id="time">
+
+        <br>
+        <label for="month">month時間</label>
+        <input type="month" id="month">
+        
+        <br>
+        <label for="datetime-local">datetime-local時間</label>
+        <input type="datetime-local" id="datetime-local">
+        
+        <br>
+        <label for="color">顏色</label>
+        <input type="color" id="color">
+
+        <br>
+        <label for="range">區間</label>
+        <input type="range" id="range" name="vol" min="0" max="100">
+
+        <br>
+        <label for="url">網址</label>
+        <input type="url" id="url">
+
+        <br>
+        <label for="a">隱藏</label>
+        <input type="hidden" id="a">
+
+        <br>
+        <label for="search">搜尋</label>
+        <input type="search" id="search">
+
+        <br>
+        <input type="submit" value="送出">
+        <input type="reset">
+
+        <h2>checkbox在右邊</h2>
+        <br>
+        <label>上網
+            <input type="checkbox" id="checkbox">
+        </label>
+        <label>釣魚
+            <input type="checkbox" id="checkbox">
+        </label>
+        <label>睡覺
+            <input type="checkbox" id="checkbox">
+        </label>
+
+        <h2>checkbox在左邊</h2>
+        <br>
+        <label><input type="radio" id="checkbox" name="aa">上網
+        </label>
+        <label><input type="radio" id="checkbox" name="aa">釣魚
+        </label>
+        <label><input type="radio" id="checkbox" name="aa">睡覺
+        </label>
+        <br>
+# 若要使得radio變成單選，則需要把name都取名一樣的。
+        <br>
+        <input type="button" onclick="alert('hello, world')" value="click me^^">
+        <br>
+        <button>click me!!!</button>
+
+        <label>myfile
+            <input type="file">
+        </label>
+    </form>
+
+
+    <figure>
+        <img src="https://s.yimg.com/zp/MerchandiseImages/211735FA45-SP-6990099.jpg" alt="圖片消失"">
+        <figcaption>
+            這是一張厲害的圖片
+        </figcaption>
+    </figure>
+#figure:代表這裡面的東西要獨立結果。
+#fircaption:描述獨立圖片的文字
+
+    <picture>
+        <source>
+    </picture>
+#較為適用於RWD
+
+</body>
+</html>

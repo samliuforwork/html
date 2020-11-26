@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap {
+            height: 600px;
+            width: 960px;
+            display: flex;
+        }
+        .videosPlaylist {
+            padding: 32px 24px;
+        }
+        .list {
+            width: 100%;
+        }
+        .listImage {
+            width: 100%;
+        }
+        .video {
+            display: flex;
+            background-color: rgb(235, 235, 235);
+        }
+        .notifyOwnerContainer {
+            width: 353px;
+            height: 94px;
+            display: flex;
+            padding: 16px 0;
+        }
+        .notifyOwnerPicContainer {
+            width: 64px;
+            height: 50px;
+        }
+        .notifyOwnerPic {
+            width: 48px;
+            height: 48px;
+            border-radius: 24px;
+        }
+        .notifyOwnerName {
+            width: 118px;
+            height: 48px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .notifyOwnerName a {
+            color: black;
+            text-decoration: none;
+        }
+        button {
+            width: 114px;
+            height: 40px;
+            background-color: gainsboro;
+            padding: 10px 16px;
+            margin: 1.6px 4px;
+            color: #606060;
+            border: hidden;
+        }
+        .notifyOwneralert {
+            padding: 8px;
+            width: 40px;
+            height: 40px;
+        }
+        .videoContent {
+            height: 94px;
+            border-bottom: 1px solid rgb(121, 119, 119);
+            display: flex;
+            padding: 16px;
+        }
+        .videoContent .title {
+            margin: 0 0 8px;
+        }
+        .videoContent .author {
+            margin: 0 -1.3px 0 0;
+            padding: 0 1.3px 0 0;
+        }
+
+        .videoNumberContainer {
+            width: 80px;
+            display: flex;
+            flex-direction: row;
+            align-self: stretch;
+            align-items: center;
+            text-align: center;
+            vertical-align: middle; 
+            line-height: 80px;
+        }
+        .videoNumber {
+            width: 100%;
+            padding: 16px 0;
+        }
+        .videoInfo {
+            vertical-align: text-top;
+            line-height: 20px;
+        }
+
+        .videosList {
+            margin: 20px;
+        }
+        .listImage {
+            display: block;
+        }
+        .listPlayAll {
+            width: 357px;
+            height: 40px;
+            opacity: .3;
+            text-align: center;
+        }
+        .listPlayAll img {
+            width: 24px;
+            height: 24px;
+            margin: 0 8px 0 0;
+        }
+        .listPlayAll p {
+            width: 61px;
+            height: 20px;
+            margin: 0 8px 0 0;
+        }
+        .playIcon {
+            margin: 0 8px 0 0;
+        }
+        h1 {            
+            margin: 0 0 8px;
+        }
+        .listAddress {
+            font-size: 24px;
+            font: sans-serif;
+            text-decoration: none;
+
+        }
+        .listAddress:visited {
+            color: black;
+        }
+        .listSummarizeInfo {
+            width: 353px;
+            height: 40.73px;
+            margin: 10px 0 0;
+        }
+        .listAction {
+            display: flex;
+            width: 361px;
+            height: 40px;
+        }
+        .listActionImage {
+            width: 40px;
+            height: 40px;
+            padding: 8px;
+        }
+
+        .listBlank {
+            width: 353px;
+            height: 16px;
+            border-bottom: 1px solid  rgb(121, 119, 119);            
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="videosPlaylist">
+            <div class="videosList">
+                <div class="listImage">
+                    <img src="https://i.ytimg.com/vi/ZavL9y4Adrk/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLB-PfPRe_YWrqXHknUIrJIpuH3CPg" alt=listSnapImage>
+                </div>
+                <!-- <div class="listPlayAll">
+                    <img src="" alt="" class="playIcon">
+                    <p class="playIcon">PLAY ALL</p>
+                </div> -->
+                <div class="list">
+                    <h1>
+                        <a href="https://www.youtube.com/watch?v=ZavL9y4Adrk&list=PLqivELodHt3iL9PgGHg0_EF86FwdiqCre" class="listAddress">2019年IT鐵人賽-冠軍影片</a>
+                    </h1>
+                    <div class="listSummarizeInfo">
+                        <span>29</span>
+                        <span>部影片</span>
+                        <span>117,343次</span>
+                        <span>上次更新日期</span>
+                        <span>2019年10月19日</span>
+                    </div>
+                    <div class="listActionContainer">
+                        <div class="listAction">
+                            <div class="listActionImage">
+                                <img src="/png/002-file.png" alt="file">
+                            </div>
+                            <div class="listActionImage">
+                                <img src="/png/001-share.png" alt="share">
+                            </div>
+                            <div class="listActionImage">
+                                <img src="/png/003-next.png" alt="next">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="listBlank"></div>
+                </div>
+                <div class="notifyOwnerContainer">
+                    <a href="" class="notifyOwnerPicContainer">
+                        <img src="https://yt3.ggpht.com/a/AATXAJzv-CZ_4DQa-wVpvOURQ-Aff3Pg_s89FW95CH-S=s88-c-k-c0x00ffffff-no-rj" alt="photo" class="notifyOwnerPic">
+                    </a>
+                    <div class="notifyOwnerName">
+                        <div>
+                            <a href="https://www.youtube.com/c/CSScoke">CSScoke</a>
+                        </div>
+                    </div>
+                    <button class="notifySubscribed">已訂閱</button>
+
+                    <div class="notifyOwneralert">
+                        <img src="/png/004-alarm.png" alt="alert" class="alert">
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="videoItems">
+            <div class="video">
+                <div class="videoNumberContainer">
+                    <div class="videoNumber">
+                        1
+                    </div>
+                </div>
+                <div class="videoContent">
+                    <div class="videoImg">
+                        <img src="https://i.ytimg.com/vi/ZavL9y4Adrk/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLCY5soX8oz92cYZVPMZAQI8DVHOVA">
+                    </div>
+                    <div class="videoInfo">
+                        <h3 class="title">
+                            金魚都能懂 網頁設計入門:網頁入門第一步-鐵人賽第二天|HTML教學|網頁教學
+                        </h3>
+                        <p class="author">CSScoke</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video">
+                <div class="videoNumberContainer">
+                    <div class="videoNumber">
+                        2
+                    </div>
+                </div>
+                <div class="videoContent">
+                    <div class="videoImg">
+                        <img src="https://i.ytimg.com/vi/0XhNnLOJO_0/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLCfsj0XM_AnVxYtXRSeYk67Ei7Arw">
+                    </div>
+                    <div class="videoInfo">
+                        <h3 class="title">
+                            金魚都能懂 網頁設計入門:用甚麼工具寫網頁?-鐵人賽第三天|HTML教學|網頁教學
+                        </h3>
+                        <p class="author">CSScoke</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video">
+                <div class="videoNumberContainer">
+                    <div class="videoNumber">
+                        3
+                    </div>
+                </div>
+                <div class="videoContent">
+                    <div class="videoImg">
+                        <img src="https://i.ytimg.com/vi/88qmvi4snuo/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLCdRhP85EJuKTWruvps6cyWympDSQ">
+                    </div>
+                    <div class="videoInfo">
+                        <h3 class="title">
+                            金魚都能懂 網頁設計入門:再談HTML-鐵人賽第四天|HTML教學|網頁教學
+                        </h3>
+                        <p class="author">CSScoke</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>    
+    </div>
+
+
+</body>
+</html>

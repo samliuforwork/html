@@ -1,0 +1,33 @@
+找圖+分析:40min
+作業:1hr+25min
+
+10:14-13:00
+21:50-23:56
+01:30
+7:20-10:40
+
+w1920 : h708 = w1200 : 
+
+w1603.2 
+740.6 : 692 : 836.8 : 690 : 416.6 : 651.7
+= 442.5 : 413.5 : 627.6 : 378.9 : 
+
+圖片大小計算
+1603.2 : 692 = 1200 : 413.5
+623 x 537 = 467.25 x 320.86
+
+
+    <div class="header_nav">
+            <div class="header_logo"><a href="https://template58850.motopreview.com/">Langerba</a></div>
+            <nav class="header_nav_describe">
+                <a href="https://template58850.motopreview.com/">Home</a>
+                <a href="https://template58850.motopreview.com/about-us/">About us</a>
+                <a href="https://template58850.motopreview.com/courses/">Courses</a>
+                <a href="https://template58850.motopreview.com/gallery/">Gallery</a>
+                <a href="https://template58850.motopreview.com/blog/">Blog</a>
+                <a href="https://template58850.motopreview.com/contact-us/">Contact us</a>
+            </nav>
+            <nav class="header_nav_icon">
+                <a href="">+1 800 598 78 87</a>
+            </nav>
+    </div>

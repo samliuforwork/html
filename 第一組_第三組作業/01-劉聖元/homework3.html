@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="RWD.css">
+
+    <style>
+        .header_nav{
+            position: fixed;
+            top: 0;
+            width: 98%;
+            background-color: rgb(0, 60, 90);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            line-height: 40px;
+            z-index: 1;
+        }
+        .header_nav_icon a{
+            text-decoration: none;
+            color: white;
+            opacity: 50%;
+        }
+        #menu_control{
+            position: absolute;
+        }
+
+        .meun_btn{
+            position: absolute;
+            right: 50%;
+            width: 40px;
+            height: 40px;
+            background-color: #000;
+            vertical-align: center;
+            position: absolute;
+        }
+        .meun_btn span{
+            opacity: 0;
+            width: 1px;
+            height: 1px;
+            display: block;
+            overflow: hidden;
+        }
+        .meun_btn::before{
+            content: '';
+            position: absolute;
+            height: 2px;
+            left: 2px;
+            width: 36px;
+            background-color: #aaa;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            box-shadow: 0px 8px 0px #aaa,
+                        0px -8px 0px #aaa;
+        }
+        .rwd_nav{
+            position: absolute;
+            top: 100%;
+            left: -100%;
+            width: 90%;
+            height: calc(100vh - 40px);
+            background-color: rgb(0, 60, 90);
+            }
+        .rwd_nav a{
+            display: block;
+            text-decoration: none;
+            color: white;
+            border-bottom: 2px solid white;
+            }       
+        #menu_control:checked ~ .header_nav nav{
+            left: 0;
+        }   
+
+        @media screen and (min-width:1200px){
+            .meun_btn{
+                display: none;
+            }
+        }
+        @media screen and (max-width:1200px){
+            .header_nav_describe{
+                display: none;
+            }
+            .header_logo a{
+                font-size: 2.5rem;
+                color: white;
+                text-decoration: none;
+            }
+        }
+        
+
+    </style>
+
+</head>
+
+<body>
+
+
+
+
+<div class="box">
+
+    <input type="checkbox" name="" id="menu_control">
+
+    <div class="header_nav">
+            <div class="header_logo"><a href="https://template58850.motopreview.com/">Langerba</a></div>
+            <label for="menu_control" class="meun_btn">
+                <span>選單</span>
+            </label>
+            <nav class="header_nav_describe">
+                <a href="https://template58850.motopreview.com/">Home</a>
+                <a href="https://template58850.motopreview.com/about-us/">About us</a>
+                <a href="https://template58850.motopreview.com/courses/">Courses</a>
+                <a href="https://template58850.motopreview.com/gallery/">Gallery</a>
+                <a href="https://template58850.motopreview.com/blog/">Blog</a>
+                <a href="https://template58850.motopreview.com/contact-us/">Contact us</a>
+            </nav>
+
+            <nav class="rwd_nav">
+                <a href="https://template58850.motopreview.com/">Home</a>
+                <a href="https://template58850.motopreview.com/about-us/">About us</a>
+                <a href="https://template58850.motopreview.com/courses/">Courses</a>
+                <a href="https://template58850.motopreview.com/gallery/">Gallery</a>
+                <a href="https://template58850.motopreview.com/blog/">Blog</a>
+                <a href="https://template58850.motopreview.com/contact-us/">Contact us</a>
+            </nav>
+
+            <nav class="header_nav_icon">
+                <a href="">+1 800 598 78 87</a>
+            </nav>
+    </div>
+    
+    <!-- page1_Open The World -->
+    <div class="OTW_page">
+        <div class="OTW-col col- slogan">
+            <div class="slogan_open">
+                <p>Open the world of opportunities!</p>
+            </div>
+
+            <div class="slogan_learn">
+                <p>Learn to communicate with the world around you.</p>
+            </div>
+
+            <div class="OTW_register">
+                <a href="https://reurl.cc/zzEv5p">register now</a>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- page2_Studying Foreign Languages -->
+    <div class="SFL_page">
+        <div class="SFL">
+                <div class="SFL-row SFL_block">
+                    <div class="SFL-col SFL_sfl">Study Foreign Languages</div>
+                </div>
+
+                <div class="SFL-row SFL_describe">
+                    <div class="SFL-col-6-text">
+                        <div><p class="SFL_describe_every">Every foreign language has its own momentum.</p></div>
+                        <div><p class="SFL_describe_The">The more you learn, the more you want to learn. Say you love Italian food and decide to study Italian. At first, it's hard. But one day you meet some Italian tourists on the bus and you understand enough to point them towards their hotel. Before you part ways, they give you their e-mail address. Now you can easily communicate with them and study some more.</p></div>
+                        <div class="SLF_register"><a href="https://reurl.cc/zzEv5p">register now</a></div>
+                    </div>
+
+                    <div class="SFL-col-6-pic">
+                        <img src="/elements/SLF_studyingman.png" alt="The picture can't be displayed.">
+                    </div>
+                </div>
+                
+        </div>
+    </div>
+
+    <!-- page3_reasons -->
+    <div class="reasons_page">
+        <div class="reasons_row-slogan"><p>6 reasons to start learn language</p></div>
+
+        <div class="reasons_row-6">
+
+            <div class="reason_col-6">
+                <div class="reason_col-6_pic">
+                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" height="512" viewBox="0 0 128 128" width="512" data-name="Layer 1"><path d="m114.99 94.126a1.714 1.714 0 0 0 .315-.547 59.033 59.033 0 0 0 0-59.158 1.714 1.714 0 0 0 -.315-.547 59.5 59.5 0 0 0 -34.524-26.774 1.766 1.766 0 0 0 -.466-.138 58.943 58.943 0 0 0 -32 0 1.734 1.734 0 0 0 -.461.131 59.491 59.491 0 0 0 -34.529 26.781 1.714 1.714 0 0 0 -.315.547 59.033 59.033 0 0 0 0 59.158 1.714 1.714 0 0 0 .315.547 59.5 59.5 0 0 0 34.5 26.772 1.763 1.763 0 0 0 .481.137 58.944 58.944 0 0 0 32.01 0 1.747 1.747 0 0 0 .505-.143 59.5 59.5 0 0 0 34.484-26.766zm-49.24 25.58v-24.956h23.913c-2.6 9.51-6.341 17.412-10.891 23a55.542 55.542 0 0 1 -13.022 1.956zm-16.522-1.958c-4.55-5.586-8.291-13.487-10.891-23h23.913v24.956a55.542 55.542 0 0 1 -13.022-1.956zm-40.934-52h22.651a121.674 121.674 0 0 0 2.921 25.5h-18.476a55.363 55.363 0 0 1 -7.096-25.498zm7.1-29h18.472a121.69 121.69 0 0 0 -2.921 25.5h-22.651a55.363 55.363 0 0 1 7.096-25.498zm46.856-28.454v24.956h-23.913c2.6-9.51 6.341-17.412 10.891-23a55.542 55.542 0 0 1 13.022-1.956zm16.522 1.958c4.55 5.586 8.291 13.487 10.891 23h-23.913v-24.958a55.542 55.542 0 0 1 13.022 1.958zm40.934 52h-22.651a121.674 121.674 0 0 0 -2.921-25.5h18.476a55.363 55.363 0 0 1 7.096 25.498zm-7.1 29h-18.472a121.69 121.69 0 0 0 2.921-25.5h22.651a55.363 55.363 0 0 1 -7.096 25.498zm-46.86 0v-25.502h27.81a117.715 117.715 0 0 1 -3.015 25.5zm27.806-29h-27.802v-25.502h24.791a117.7 117.7 0 0 1 3.015 25.5zm-31.302-25.502v25.5h-27.806a117.715 117.715 0 0 1 3.015-25.5zm-27.806 29h27.806v25.5h-24.791a117.7 117.7 0 0 1 -3.015-25.5zm50.009 50.1a74.112 74.112 0 0 0 8.83-21.1h17.189a56.049 56.049 0 0 1 -26.019 21.096zm26.019-82.6h-17.189a74.136 74.136 0 0 0 -8.83-21.1 56.058 56.058 0 0 1 26.019 21.1zm-66.925-21.1a74.131 74.131 0 0 0 -8.83 21.1h-17.189a56.051 56.051 0 0 1 26.019-21.097zm-26.019 82.6h17.189a74.145 74.145 0 0 0 8.83 21.1 56.049 56.049 0 0 1 -26.019-21.1z"/></svg></div>
+                <div class="reason_col-6_text">
+                    <p class="reason_col-6_slogan">English is spoken all over the world</p>
+                    <p class="reason_col-6_describe">English is not the most widely spoken language (that title goes to Chinese), but it does come in third, after Spanish. And the number of 335 million native speakers is respectable.</p>
+                </div>
+            </div>
+
+            <div class="reason_col-6">
+                <div class="reason_col-6_pic">
+                    <svg xmlns="http://www.w3.org/2000/svg" id="Icons" height="512" viewBox="0 0 74 74" width="512"><path d="m37 41.308a.992.992 0 0 1 -.426-.1l-34-16.006a1 1 0 0 1 0-1.81l34-16.007a1 1 0 0 1 .852 0l34 16.007a1 1 0 0 1 0 1.81l-34 16.006a.992.992 0 0 1 -.426.1zm-31.652-17.008 31.652 14.9 31.652-14.9-31.652-14.9z"/><path d="m36.775 51.3c-7.7 0-15.4-2.218-23.047-6.653a1 1 0 0 1 -.5-.865v-14.2a1 1 0 0 1 2 0v13.62c14.3 8.1 28.791 8.1 43.09 0v-13.402a1 1 0 0 1 2 0v13.984a1 1 0 0 1 -.5.865c-7.642 4.434-15.344 6.651-23.043 6.651z"/><path d="m65.567 47.012a1 1 0 0 1 -1-1v-19.154a1 1 0 0 1 2 0v19.154a1 1 0 0 1 -1 1z"/><path d="m65.567 53.716a4.352 4.352 0 1 1 4.352-4.352 4.357 4.357 0 0 1 -4.352 4.352zm0-6.7a2.352 2.352 0 1 0 2.352 2.352 2.355 2.355 0 0 0 -2.352-2.356z"/><path d="m65.681 62.707a10.478 10.478 0 0 1 -4.481-1.079 1 1 0 0 1 -.557-1.084l1.629-8.939a1 1 0 1 1 1.967.359l-1.486 8.157a7.225 7.225 0 0 0 5.638.028l-1.491-8.185a1 1 0 0 1 1.968-.359l1.629 8.939a1 1 0 0 1 -.517 1.064 9.107 9.107 0 0 1 -4.299 1.099z"/></svg>
+
+                </div>
+                <div class="reason_col-6_text">
+                    <p class="reason_col-6_slogan">International business requires English</p>
+                    <p class="reason_col-6_describe">In terms of international commerce, English is the language to learn. When the Chinese do business in Egypt, the negotiations and transactions happen in English.</p>
+                </div>
+            </div>
+
+
+        <div class="reasons_row-6">
+
+            <div class="reason_col-6">
+                <div class="reason_col-6_pic">
+                    <?xml version="1.0" encoding="UTF-8"?>
+                    <svg width="512" height="512" viewBox="0 0 74 74" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m67 72h-60a5.006 5.006 0 0 1-5-5v-60a5.006 5.006 0 0 1 5-5h60a5.006 5.006 0 0 1 5 5v60a5.006 5.006 0 0 1-5 5zm-60-68a3 3 0 0 0-3 3v60a3 3 0 0 0 3 3h60a3 3 0 0 0 3-3v-60a3 3 0 0 0-3-3z"/>
+                    <path d="m43.332 59.668-21.756-21.755-17.834 19.757-1.484-1.34 18.542-20.538a1 1 0 0 1 .717-.33.941.941 0 0 1 .732.292l22.5 22.5z"/>
+                    <path d="m33.784 48.707-1.414-1.414 19.462-19.461a1 1 0 0 1 1.414 0l18.461 18.461-1.414 1.414-17.754-17.754z"/>
+                    <path d="m33 29a8 8 0 1 1 8-8 8.009 8.009 0 0 1-8 8zm0-14a6 6 0 1 0 6 6 6.007 6.007 0 0 0-6-6z"/>
+                    </svg></div>
+                <div class="reason_col-6_text">
+                    <p class="reason_col-6_slogan">Education and research opportunities</p>
+                    <p class="reason_col-6_describe">Thinking of studying abroad or publishing a research paper? Chances are you will decide to learn English at some point along the way, or to study at your chosen institution.</p>
+                </div>
+            </div>
+
+            <div class="reason_col-6">
+                <div class="reason_col-6_pic">                                         <?xml version="1.0" encoding="UTF-8"?>
+                    <svg width="512" height="512" viewBox="0 0 74 74" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m67 72h-60a5.006 5.006 0 0 1-5-5v-60a5.006 5.006 0 0 1 5-5h60a5.006 5.006 0 0 1 5 5v60a5.006 5.006 0 0 1-5 5zm-60-68a3 3 0 0 0-3 3v60a3 3 0 0 0 3 3h60a3 3 0 0 0 3-3v-60a3 3 0 0 0-3-3z"/>
+                    <path d="m43.332 59.668-21.756-21.755-17.834 19.757-1.484-1.34 18.542-20.538a1 1 0 0 1 .717-.33.941.941 0 0 1 .732.292l22.5 22.5z"/>
+                    <path d="m33.784 48.707-1.414-1.414 19.462-19.461a1 1 0 0 1 1.414 0l18.461 18.461-1.414 1.414-17.754-17.754z"/>
+                    <path d="m33 29a8 8 0 1 1 8-8 8.009 8.009 0 0 1-8 8zm0-14a6 6 0 1 0 6 6 6.007 6.007 0 0 0-6-6z"/>
+                    </svg>
+                        </div>
+                <div class="reason_col-6_text">
+                    <p class="reason_col-6_slogan">A perfect language for traveling</p>
+                    <p class="reason_col-6_describe">If you travel often, you’ll note signs tend to come in the local tongue first and English second. That’s because English is considered the most popular international language.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="reasons_row-6">
+        <div class="reason_col-6">
+                <div class="reason_col-6_pic">
+
+                    
+                    <svg enable-background="new 0 0 512 512" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                        <path d="m277.33 0c-98.816 0-179.2 80.393-179.2 179.2s80.384 179.2 179.2 179.2 179.2-80.393 179.2-179.2-80.384-179.2-179.2-179.2zm0 341.33c-89.404 0-162.13-72.73-162.13-162.13s72.73-162.13 162.13-162.13 162.13 72.729 162.13 162.13-72.73 162.13-162.13 162.13z"/>
+                        <path d="m308.88 181.22c-0.785-5.896-4.378-11.145-9.626-14.046-5.231-2.901-11.315-3.149-16.674-0.7v9e-3c-13.815 6.298-30.319 0.93-37.572-12.262-10.769-19.61-28.911-24.311-29.21-24.371-23.305-7.236-33.69-12.339-38.255-15.241 1.126-0.375 2.543-0.794 4.309-1.203 5.982-1.417 12.433-1.98 19.183-1.613 34.185 1.579 51.456-22.665 55.868-35.814 6.221-18.56-10.556-51.712-18.057-65.101l-3.285-5.871-6.477 1.835c-61.372 17.314-109.37 66.159-125.28 127.48l-1.604 6.161 5.444 3.285c15.744 9.523 31.616 8.909 34.867 8.653 8.482 0.068 15.095 2.594 20.215 7.74 11.494 11.537 12.646 33.314 12.612 42.138-0.034 8.986 0.785 17.041 2.517 24.636 10.351 45.295 40.969 49.152 51.089 49.152 1.015 0 1.826-0.034 2.389-0.085 14.404-0.119 27.332-8.107 33.801-20.932 3.661-7.253 9.353-13.525 16.444-18.133 27.795-18.049 29.032-42.66 27.3-55.716zm-36.591 41.404c-9.617 6.246-17.357 14.805-22.374 24.755-3.601 7.125-10.829 11.554-18.876 11.554l-1.203 0.085c-1.058 0.179-26.385 3.285-35.328-35.891-1.442-6.306-2.125-13.099-2.091-20.77 0.051-13.602-2.159-38.75-17.587-54.246-8.439-8.465-19.422-12.757-32.657-12.757l-0.888 0.051c-0.111 0.017-9.011 0.802-19.115-3.362 15.36-50.219 54.775-90.3 105.02-106.8 9.088 17.604 16.162 37.427 13.517 45.295-0.077 0.256-8.977 25.847-38.81 24.201-8.38-0.393-16.427 0.265-23.97 2.048-4.958 1.169-20.062 4.727-20.471 16.418-0.35 10.01 8.439 19.012 53.675 33.05 0.478 0.128 11.861 3.319 18.918 16.179 11.52 20.992 37.709 29.602 59.622 19.558 0.41-0.171 0.862-0.145 1.323 0.111 0.265 0.137 0.862 0.555 0.973 1.357 2.142 16.111-4.48 29.286-19.678 39.159z"/>
+                        <path d="m450.38 132.06-1.946-7.279-7.458 1.016c-36.958 5.052-54.323-1.314-60.075-4.301-8.943-4.625-18.756-5.069-26.889-1.161-11.136 5.299-23.603 18.901-19.721 54.025 0.179 1.067 4.642 26.3 32.435 40.32 8.61 4.344 13.158 13.807 11.059 23.014-6.332 27.793-0.154 50.509 17.886 65.698l6.17 5.197 5.538-5.862c31.693-33.579 49.152-77.559 49.152-123.85 1e-3 -15.795-2.072-31.548-6.151-46.814zm-49.485 152.32c-8.354-10.641-10.53-25.02-6.451-42.889 3.84-16.879-4.386-34.167-20.019-42.052-19.797-9.993-23.151-27.213-23.211-27.409-1.51-13.636-0.964-31.002 10.163-36.301 1.357-0.648 2.893-0.973 4.514-0.973 2.287 0 4.753 0.64 7.177 1.894 8.346 4.318 27.238 10.658 62.566 6.972 2.543 11.588 3.831 23.398 3.831 35.251 1e-3 38.93-13.636 76.067-38.57 105.51z"/>
+                        <path d="m391.85 41.378c-12.834-10.675-27.11-19.507-42.453-26.249l-4.838-2.133-7.748 6.468c-9.02 7.057-36.489 28.518-23.851 52.898l1.135 1.69c4.855 5.572 15.232 12.868 28.134 12.868 6.212 0 13.005-1.698 20.036-6.093 4.48-2.79 8.474-6.63 12.561-12.075 2.116-2.816 6.127-7.168 12.655-11.614l13.833-7.885-9.464-7.875zm-30.661 17.118c-2.79 3.721-5.316 6.212-7.945 7.851-12.902 8.038-22.886-0.154-25.626-2.842-1.621-3.686-3.183-12.638 19.661-30.575 8.644 4.139 16.896 9.028 24.644 14.601-5.196 4.266-8.617 8.158-10.734 10.965z"/>
+                        <path d="m324.44 341.56c-3.593-7.509-6.187-16.196-7.706-25.813-3.046-19.268-19.627-33.254-39.407-33.254-30.507 0-55.347 24.687-55.612 55.125l-1.297 11.674 6.903 1.997c16.307 4.727 33.126 7.117 50.014 7.117 13.833 0 27.75-1.63 41.37-4.855l10.308-2.441-4.573-9.55zm-85.632-4.872c0.751-20.599 17.741-37.129 38.519-37.129 11.153 0 20.847 8.107 22.545 18.859 1.152 7.279 2.85 14.148 5.077 20.54-22.058 3.814-44.534 3.012-66.141-2.27z"/>
+                        <path d="m445.92 327.22c-3.089-3.567-8.482-3.959-12.041-0.87-37.623 32.538-76.527 66.185-156.55 66.185-117.63 0-213.33-95.701-213.33-213.33 0-54.101 16.99-102.33 49.126-139.49 3.081-3.567 2.688-8.96-0.87-12.032-3.558-3.089-8.96-2.688-12.041 0.87-34.857 40.294-53.281 92.39-53.281 150.65 0 127.04 103.36 230.4 230.4 230.4 86.383 0 127.73-35.755 167.72-70.349 3.558-3.072 3.959-8.465 0.87-12.032z"/>
+                        <path d="m129.76 45.167-34.133-34.133c-3.337-3.336-8.73-3.336-12.066 0-3.336 3.337-3.336 8.73 0 12.066l34.133 34.133c1.664 1.664 3.849 2.5 6.033 2.5 2.185 0 4.369-0.836 6.033-2.5 3.337-3.336 3.337-8.73 0-12.066z"/>
+                        <path d="m462.56 343.83-34.133-34.134c-3.337-3.336-8.73-3.337-12.066 0-3.337 3.337-3.337 8.73 0 12.066l34.133 34.133c1.664 1.664 3.849 2.5 6.033 2.5 2.185 0 4.369-0.836 6.033-2.5 3.337-3.336 3.337-8.729 0-12.065z"/>
+                        <path d="m354.13 460.8h-153.6c-4.71 0-8.533 3.814-8.533 8.533v34.133c0 4.719 3.823 8.533 8.533 8.533h153.6c4.71 0 8.533-3.814 8.533-8.533v-34.133c1e-3 -4.719-3.822-8.533-8.533-8.533zm-8.533 34.133h-136.53v-17.067h136.53v17.067z"/>
+                        <path d="m345.6 460.8c-32.939 0-59.733-26.803-59.733-59.733 0-4.719-3.823-8.533-8.533-8.533s-8.533 3.814-8.533 8.533c0 32.93-26.795 59.733-59.733 59.733-4.71 0-8.533 3.814-8.533 8.533s3.823 8.533 8.533 8.533h136.53c4.71 0 8.533-3.814 8.533-8.533s-3.824-8.533-8.534-8.533zm-88.312 0c8.269-6.682 15.121-15.053 20.045-24.568 4.924 9.515 11.776 17.886 20.045 24.568h-40.09z"/>
+                </svg>
+
+                </div>
+                <div class="reason_col-6_text">
+                    <p class="reason_col-6_slogan">The language of cinema and music</p>
+                    <p class="reason_col-6_describe">If you like going to the movies and are a fan of sitcoms, then English should be on your list. That’s because so many of the world’s films are written and produced in English.</p>
+                </div>
+            </div>
+
+            <div class="reason_col-6">
+                <div class="reason_col-6_pic">
+
+                    <?xml version="1.0" encoding="UTF-8"?>
+                    <svg enable-background="new 0 0 480 480" version="1.1" viewBox="0 0 480 480" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="m472 88.014h-32v-40c0.016-4.418-3.553-8.013-7.972-8.028-0.234-1e-3 -0.467 9e-3 -0.7 0.028l-20.872 1.76c-50.615 4.186-100.26 16.291-147.12 35.872l-23.336 9.704-23.312-9.672c-46.866-19.584-96.516-31.691-147.14-35.88l-20.88-1.784c-4.403-0.371-8.273 2.897-8.644 7.3-0.02 0.233-0.029 0.467-0.028 0.7v40h-32c-4.418 0-8 3.582-8 8v336c0 4.418 3.582 8 8 8h464c4.418 0 8-3.582 8-8v-336c0-4.418-3.582-8-8-8zm-456 336.02v-320.02h24v280c-0.015 4.166 3.169 7.646 7.32 8l21.528 1.84c5.867 0.491 11.733 1.096 17.6 1.816 1.96 0.232 3.904 0.544 5.864 0.8 3.88 0.52 7.76 1.04 11.624 1.656 2.304 0.368 4.6 0.8 6.896 1.208 3.504 0.616 7.008 1.232 10.496 1.92 2.4 0.48 4.8 1.008 7.2 1.528 3.368 0.72 6.736 1.456 10.088 2.256 2.4 0.576 4.84 1.192 7.256 1.808 3.304 0.848 6.6 1.712 9.888 2.624 2.4 0.672 4.8 1.376 7.2 2.08 3.264 0.965 6.52 1.968 9.768 3.008 2.379 0.757 4.752 1.536 7.12 2.336 3.272 1.096 6.52 2.248 9.768 3.424 2.304 0.8 4.616 1.672 6.904 2.544 0.992 0.376 1.976 0.8 2.96 1.168h-183.48zm216-4.016-14.752-6.16c-46.83-19.62-96.45-31.768-147.05-36l-14.2-1.184v-319.95l12.208 1.024c48.966 4.046 96.993 15.754 142.33 34.696l21.464 8.912v318.66zm16 0v-318.66l21.488-8.92c45.327-18.938 93.346-30.643 142.3-34.688l12.208-1.024v319.93l-13.144 1.072c-50.629 4.203-100.29 16.279-147.2 35.792l-15.656 6.504zm216 4h-183.36c1.096-0.424 2.184-0.872 3.28-1.288 2.4-0.92 4.8-1.792 7.256-2.664 3.136-1.136 6.285-2.237 9.448-3.304 2.464-0.8 4.944-1.6 7.416-2.4 3.16-1.008 6.336-1.968 9.512-2.912 2.496-0.736 5-1.464 7.504-2.152 3.2-0.896 6.4-1.736 9.68-2.56 2.48-0.632 4.968-1.264 7.464-1.856 3.328-0.8 6.68-1.52 10.032-2.232 2.4-0.52 4.8-1.056 7.248-1.536 3.52-0.696 7.056-1.312 10.584-1.928 2.288-0.4 4.568-0.8 6.864-1.2 3.944-0.624 7.896-1.16 11.856-1.688 1.896-0.248 3.792-0.552 5.696-0.8 5.867-0.709 11.763-1.315 17.688-1.816l20.488-1.664c4.16-0.342 7.358-3.826 7.344-8v-280h24v320z"/>
+                                            </svg>
+
+
+</div>
+                <div class="reason_col-6_text">
+                    <p class="reason_col-6_slogan">Hemingway and Harry Potter</p>
+                    <p class="reason_col-6_describe">English has been around for a long time and English speaking writers have always been a fairly prolific bunch, both in Great Britain and the United States.</p>
+                </div>
+            </div>
+        </div>
+        </div>        
+
+
+    </div>
+
+    <!-- page4_Our Book Center -->
+    <div class="OBC_page">
+        <div class="OBC">
+            <div class="OBC-row OBC_describe">
+                <div class="OBC-col-6-text">
+                    <div><p class="OBC_describe_Our">Our Book Center is an official distributor of Oxford University Press</p></div>
+                    <div><p class="OBC_describe_We">We offer a wide range of books for teachers and students.</p></div>
+                    <div><p class="OBC_describe_TBC">The Book Center provides schools, language centers, colleges and universities with English teaching materials from Seattle to Miami. Our dealers work in almost all states.</p></div>
+                </div>
+
+                <div class="OBC-col-6-pic">
+                    <img src="/elements/OBC_globe.png" alt="The picture can't be displayed.">
+                </div>
+            </div>    
+        </div>
+    </div>
+
+    <!-- page5_emailcourse -->
+    <div class="email_page">
+        <div class="email_block">
+            <div class="email_slogan">Get your free e-mail course!
+            </div>
+            <div class="email_describe">30 lessons per week, Upper-Intermediate to Advanced levels, course length: 4, 8-12 weeks
+            </div>
+
+            <div class="email_wrap">
+                <div class="emai_items">
+                    <input type="text">
+                </div>
+                <div class="email_items">
+                    <a href="https://template58850.motopreview.com/">i want a course</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- page6_watchourstudents -->
+    <div class="students_page">
+        <div class="students_block">
+            <div class="students_slogan">What our students are saying
+            </div>
+            <div><img src="/elements/comma.png" alt="nil"></div>
+            <div class="students_describe">Two unforgettable weeks in Langerba! I would like to thank all the teachers for their positive spirit, amazing lessons and high professionalism. I will miss our lessons!</div>
+            <div class="students_name">Anthony Little</div>
+            <div class="students_circle">
+                <span></span>
+                <a href=""></a>
+                <a href=""></a>
+                <a href=""></a>
+                <a href=""></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="footer_nav">
+            <div class="footer_logo"><a href="https://template58850.motopreview.com/">Langerba</a></div>
+            <nav class="footer_nav_describe">
+                <a href="https://template58850.motopreview.com/">Home</a>
+                <a href="https://template58850.motopreview.com/about-us/">About us</a>
+                <a href="https://template58850.motopreview.com/courses/">Courses</a>
+                <a href="https://template58850.motopreview.com/gallery/">Gallery</a>
+                <a href="https://template58850.motopreview.com/blog/">Blog</a>
+                <a href="https://template58850.motopreview.com/contact-us/">Contact us</a>
+            </nav>
+            <nav class="footer_nav_icon">
+                <a href=""><img src="/elements/facebook.png" alt="nil"></a>
+                <a href=""><img src="/elements/google-plus.png" alt="nil"></a>
+                <a href=""><img src="/elements/twitter.png" alt="nil"></a>
+                <a href=""><img src="/elements/linked-in-logo-of-two-letters.png" alt="nil"></a>
+                <a href=""><img src="/elements/instagram.png" alt="nil"></a>
+            </nav>
+            
+        </div>
+        <div class="privacy_policy">2016. All Langerba financings are subject to eligibility, credit and underwriting approval. The programs advertised on this page are not a commitment or guarantee from Langerba to provide funds. Programs, rates and other terms & conditions on this page are subject to change without notice.<a href="https://template58850.motopreview.com/privacy-policy/">Privacy Policy</a>
+        </div>
+    </div>>
+</div>
+
+
+</body>
+</html>

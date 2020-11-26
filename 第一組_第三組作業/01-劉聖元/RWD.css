@@ -1,0 +1,388 @@
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+/* page1_Open The World */
+.OTW_page{
+    width: 100%;
+    height: 0;
+    padding-bottom: 36.875%;
+    background-image: url('/elements/world_bg.png');
+    background-repeat:no-repeat;
+    background-size: 100% auto;
+    background-color: rgb(0, 60, 90);
+    position: relative;
+}
+.OTW-col{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 15%;
+    text-align: center;
+}
+.slogan_open, .email_slogan{
+    font-size: 2.5rem;
+    color: #ffffff;
+    line-height: 2.8rem;
+}
+.slogan_learn{
+    color: #66B8E0;
+    font-size: 1em;
+}
+.OTW_register{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 30%;
+    margin-left: auto;
+    margin-right: auto ;
+    border-radius: 10% / 50%;
+    width: 16.666667%;
+    height: 11.30%;
+    background-color: #fc8f44;
+    border: white 2px solid;
+}
+.OTW_register a{
+    margin: 0 25%;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.5rem;
+    font-family: sans-serif;
+}
+
+@media screen and (max-width:768px){
+    .slogan_open{
+        font-size: 1.5rem;
+        color: #ffffff;
+        line-height: 2.8rem;
+    }
+    .OTW_register{
+        font-size: 0.1rem;
+    }
+}
+
+/* page2_Studying Foreign Languages */
+
+
+.SFL_describe{
+    width: 100%;
+    height: 100%;
+}
+
+.SFL_sfl{
+    font-size: 2.5rem;
+}
+
+.SFL_describe_every{
+    color: #5a544f;
+    font-size: 2.5rem;
+    line-height: 42px;
+    margin: 15px 0;
+}
+
+.SFL-col-6-pic{
+    order: 1;
+}
+.SFL-col-6-pic img{
+    width: 100%;
+}
+
+.SLF_register{
+    margin: 3% 0 1% 0;
+    border-radius: 10% / 50%;
+    width: 100%;
+    height: 5%;
+    background-color: #fc8f44;
+    text-align: center;
+    border: white 2px solid;
+}
+.SLF_register a{
+    line-height: 1rem;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1rem;
+    font-family: sans-serif;
+}
+
+
+@media screen and (min-width: 768px){
+    .SFL_describe{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .SFL-col-6-pic img{
+        width: 100%;
+    }
+    .SFL-col-6-text{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
+
+
+/* page3_reasons */
+.reasons_row-slogan{
+    font-size: 2rem;
+    font-weight: 300;
+    color: #282421;
+    line-height: 2rem;
+    text-align: center;
+}
+
+.reason_col-6{
+    width: 100%;
+    height: 100%;
+}
+
+.reason_col-6_slogan{
+    font-size: 3rem;
+    font-weight: 300;
+    color: #282421;}
+    
+svg{
+    fill: #fc8f44;
+    width: 40%;
+    height: 40%;
+}
+
+@media screen and (min-width: 768px){
+    .reasons_row-6{
+        display: flex;
+    }
+    .reason_col-6_pic{
+        width: 50%;
+    }
+    .reason_col-6_text{
+        width: 50%;
+    }
+}
+
+
+/* page4_OurBookCenter */
+
+.OBC_describe{
+    width: 100%;
+    height: 100%;
+}
+
+.OBC_describe_Our{
+    color: #5a544f;
+    font-size: 2.5rem;
+    line-height: 42px;
+    margin: 15px 0;
+}
+
+.OBC-col-6-pic{
+    order: -1;
+}
+.OBC-col-6-pic img{
+    width: 100%;
+}
+
+
+@media screen and (min-width: 768px){
+    .OBC_describe{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .OBC-col-6-pic img{
+        width: 100%;
+    }
+    .OBC-col-6-text{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
+
+
+/* page5_email */
+.email_page{
+    width: 100%;
+    height: 0;
+    padding-bottom: 30%;
+    background-color: rgb(0, 60, 90);
+    position: relative;
+}
+.email_block{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.email_describe{
+    color: #66B8E0;
+    margin: 15px 0;
+}
+.email_wrap{
+    display:flex;
+    margin-left: 45%;
+    height: 50%;
+}
+.email_wrap input{
+    height: 7%;
+    width: 33.3333%;
+    border-radius: 5% / 50%;
+    border: solid 1px orange;
+}
+.email_block a{
+    display: block;
+    border-radius: 10% / 50%;
+    width: 16.66667;
+    height: 3%;
+    background-color: #fc8f44;
+    color: white;
+    text-align: center;
+    border: white 2px solid;
+    line-height: 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.25rem;
+    font-family: sans-serif;
+}
+
+
+/* page6_students */
+.students_page{
+    width: 100%;
+    height: 0;
+    padding: 0 30% 30% 30%;
+    background-color:#fc8f44;
+    position: relative;
+}
+.students_block{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    top: 50%;
+    bottom: 0;
+    margin: auto;
+    align-items: center;
+}
+.students_slogan{
+    margin-left: 25%;
+    font-size: 40px;
+    color: #ffffff;
+    line-height: 45px;
+}
+.students_describe{
+    margin-top: 30px;
+    color: white;
+    font-size: 25px;
+    font-style: italic;
+    font-weight: 300;
+    margin-left: 15%;
+}
+
+.students_name{
+    color: white;
+    font-size: 17px;
+    font-style: 'Open Sans', sans-serif ;
+    font-weight: 700;
+    margin: 10px 0;
+    margin-left: 30%;
+}
+
+.students_circle{
+    display: flex;
+    width: 80px;
+    margin-left: 30%;
+}
+.students_circle a{
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    opacity: 50%;
+    border-radius: 100%;
+    margin: 3px;
+    
+}
+.students_circle span{
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 100%;
+    margin: 3px;
+}
+.students_block img{
+    width: 50px;
+    height: 50px;
+    margin-left: 45%;
+    margin-top: 20px;
+}
+
+/* Footer */
+.footer{
+    width: 100%;
+    height: 150px;
+    background-color: rgb(46, 45, 45);
+}
+.footer_nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    line-height: 40px;
+    border-bottom: 0.5px gray solid;
+}
+.footer_logo a, .header_logo a{
+    font-size: 40px;
+    color: white;
+    text-decoration: none;
+}
+.footer_nav_describe a, .header_nav_describe a{
+    margin-left: 10px;
+    color: white;
+    text-decoration: none;
+}
+.footer_nav_describe a+a, .header_nav_describe a+a{
+    margin-left: 10px;
+    color: gray;
+    text-decoration: none;
+}
+.footer_nav_icon img{
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+}
+.privacy_policy{
+    margin-top: 15px;
+    color: gray; 
+}
+.privacy_policy a{
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width:1000px){
+    .footer_nav_icon img{
+        display: block;
+        flex-wrap: wrap;
+    }
+}
+
+
+
+</style>

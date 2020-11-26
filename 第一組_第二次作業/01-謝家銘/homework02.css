@@ -1,0 +1,406 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+body {
+    width: 1200px;
+}
+
+nav.header, .regist, .reasons, .bookCenter, .eMail, .students, nav.footer, nav.policy {
+    padding: 0 150px;
+}
+
+nav.header {
+    height: 100px;
+    display: flex;
+    background-color: rgba(26, 69, 161, 0.87);
+    align-items: center;
+    color:#fff;
+    text-align: center;
+}
+
+nav.header .icon {
+    padding-right: 100px;
+}
+nav.header .list {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+nav.header .list div{
+    color: #fff;
+    opacity: .2;
+}
+nav.header .list div:hover {
+    color:#fff;
+    opacity: 1;
+    cursor: pointer;
+    transition: opacity .1s ease-in;
+    
+}
+nav.header .tel {
+    width: 210px;
+    padding-left: 100px;
+    opacity: .5;
+}
+
+
+
+
+
+.map .image img{
+    width: 100%;
+
+}
+.map-container {
+    position: relative;
+    color: #fff;
+}
+.map-container .text {
+    height: 150px;
+    position: absolute;
+    top: 50px;
+    left: 335px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+}
+.map-container .text .title {
+    font-size: 40px;
+}
+.map-container .text .detail {
+    color: #fff;
+    opacity: .4;
+}
+.map-container .text .btn {
+    width: 200px;
+    height: 50px;
+    background-color: orange;
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 15px;
+}
+.map-container .text .btn:hover{
+    cursor: pointer;
+}
+
+.map-container .image{
+    position: relative;
+    background-color:  rgba(26, 69, 161, 0.87);
+    z-index: 1;
+}
+
+
+
+.regist {
+    display: flex;
+    height: 500px;
+    background-color: rgba(242, 241, 247, 0.979);
+
+}
+
+.regist .content {
+    width: 50%;
+    margin: auto 0;
+}
+.regist .content h2{
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+.regist .text .title {
+    font-size: 30px;
+    opacity: .4;
+    padding-bottom: 20px;
+}
+.regist .text .detail{
+    opacity: .4;
+    padding-bottom: 20px;
+}
+.regist .btn {
+    width: 200px;
+    height: 50px;
+    background-color: orange;
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 15px;
+}
+.regist .btn:hover{
+    cursor: pointer;
+}
+
+.regist .image {
+    width: 50%;
+    margin: auto 0 0 0;
+}
+
+.regist img {
+    width: 100%;
+}
+
+
+
+
+
+.reason img {
+    width: 50px;
+    height: 50px;
+}
+.reasons-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.reasons-list .reason {
+    width: 400px;
+    display: flex;
+    margin-bottom: 50px;
+}
+.reason .image {
+    margin: 0 20px;
+}
+
+.reasons >.title {
+    height: 80px;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reason .title {
+    font-size: 20px;
+    margin-bottom: 10px;    
+}
+.reason .detail {
+    opacity: .4;
+}
+
+
+
+
+
+
+
+
+
+.bookCenter {
+    display: flex;
+    background-color: rgb(234, 242, 246);
+    height: 700px;
+}
+
+.bookCenter .image {
+    margin: auto 50px auto 0;
+}
+.bookCenter .content {
+    margin-top: 150px;
+}
+.bookCenter .content h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.bookCenter .content .text {
+    opacity: .4;
+}
+.bookCenter .content .text .title {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+.eMail {
+    background-color: rgb(9, 37, 70);
+    color: #fff;
+    height: 200px;
+    padding-top: 100px ;
+    padding-bottom: 100px ;
+}
+.eMail .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.eMail .content h2{
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+.eMail .content .detail{
+    opacity: .4;
+    padding-bottom: 20px;
+}
+
+.eMail .buttons {
+    padding: 0 80px 0 80px;
+    display: flex;
+    justify-content: center;
+}
+.eMail .buttons .email {
+    display: inline-block;
+    width: 400px;
+    height: 40px;
+    padding: 0 0 0 20px;
+    border-radius: 20px;
+    margin: 0 20px 0 0;
+    color: rgb(170, 166, 166);
+    font-size: 18px;
+}
+
+.eMail .buttons .btn {
+    display: inline-block;
+    width: 180px;
+    height: 40px;
+    background-color: orange;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    opacity: 1;
+    font-size: 12px;
+}
+.eMail .buttons .btn:hover {
+    cursor: pointer;
+}
+.eMail .buttons .btn:hover {
+    opacity: 1;
+    transition: opacity .2s ease-in;
+}
+
+
+
+
+
+
+.students {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(223, 111, 37);
+    height: 300px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #fff;
+}
+
+
+.students h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.students img {
+    margin-bottom: 30px;
+}
+.students .detail {
+    margin-bottom: 30px;
+}
+.students .author {
+    margin-bottom: 30px;
+}
+.students .radios {
+    display: flex;
+}
+.students .radios label {
+    border: 2px solid #fff;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    background-color: orange;
+}
+.students .radios label:hover {
+    background-color: #fff;
+}
+
+input[id="01"]:checked ~ .radios label[for="01"]{
+    background-color: #fff;
+}
+input[id="02"]:checked ~ .radios label[for="02"]{
+    background-color: #fff;
+}
+input[id="03"]:checked ~ .radios label[for="03"]{
+    background-color: #fff;
+}
+input[id="04"]:checked ~ .radios label[for="04"]{
+    background-color: #fff;
+}
+input[id="05"]:checked ~ .radios label[for="05"]{
+    background-color: #fff;
+}
+
+.students .radios input{
+    display: none;
+}
+
+
+
+
+
+
+
+nav.footer {
+    height: 100px;
+    display: flex;
+    background-color: rgba(34, 39, 49, 0.87);
+    align-items: center;
+    color:#fff;
+}
+nav.footer  .text {
+    padding-right: 100px;
+    font-size: 30px;
+}
+nav.footer .list {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+nav.footer .list div{
+    color: #fff;
+    opacity: .2;
+}
+nav.footer .list div:hover {
+    color:#fff;
+    opacity: 1;
+    cursor: pointer;
+    transition: opacity .1s ease-in;
+}
+.socialMedia {
+    display: flex;
+    width: 200px;
+    padding-left: 100px;
+}
+.socialMedia .icon {
+    width: 25px;
+    margin: 0 8px;
+}
+.socialMedia .icon:hover {
+    cursor: pointer;
+}
+.socialMedia .icon img{
+    width: 25px;
+    height: 25px;
+}
+
+
+
+
+div.policy {
+    display: flex;
+    align-items: center;
+}
+nav.policy {
+    background-color:rgba(34, 39, 49, 0.87);
+    height: 100px;
+    color: rgba(242, 241, 247, 0.4);
+    padding-top: 30px;
+}
+
+nav.policy strong {
+    color: #fff;
+}

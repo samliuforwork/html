@@ -1,0 +1,362 @@
+* {
+	padding: 0;
+	margin: 0;
+	margin: 0 auto;
+	text-decoration: none;
+}
+
+body {
+	width: 1200px;
+	background-color: #013c5a;
+}
+a {
+	color: white;
+}
+
+.navbar {
+	width: 900px;
+	color: white;
+	height: 100px;
+	font-size: 10px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: space-evenly;
+	-ms-flex-pack: space-evenly;
+	justify-content: space-evenly;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.navbar .nav {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	color: #3d96c2;
+}
+
+.navbar .nav nav {
+	margin: 0 10px;
+}
+
+.navbar .nav nav:hover {
+	color: white;
+}
+
+.hero {
+	height: 480px;
+	width: 1200px;
+	background-image: url('./images/page01_img01.png');
+	background-color: none;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	color: white;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+.hero .slogan {
+	font-weight: 400;
+	font-size: 25px;
+	line-height: 40px;
+}
+
+.hero .desc {
+	color: #cdcdcd;
+	font-size: 12px;
+	line-height: 40px;
+}
+
+.hero .register {
+	margin-top: 15px;
+	color: white;
+	height: 35px;
+	width: 150px;
+	background-color: #fd8f44;
+	border: none;
+	border-radius: 35px;
+	text-transform: uppercase;
+	margin-bottom: 180px;
+}
+
+.study {
+	background-image: url('./images/page01_img02.png');
+	background-repeat: no-repeat;
+	background-position: 650px bottom;
+	background-size: 32% 75%;
+	height: 450px;
+	background-color: #ecf4f7;
+}
+
+.study .study-content {
+	margin-left: 0;
+}
+
+.study .study-content .slogan {
+	font-size: 25px;
+	width: 450px;
+	margin-left: 200px;
+	padding-top: 100px;
+	font-weight: 400;
+	line-height: 40px;
+}
+
+.study .study-content .desc {
+	padding-top: 10px;
+	width: 350px;
+	font-size: 18px;
+	margin-left: 200px;
+}
+
+.study .study-content .more {
+	width: 300px;
+	font-size: 15px;
+	margin-left: 200px;
+	padding-top: 10px;
+}
+
+.study .study-content .register {
+	margin-left: 200px;
+	margin-top: 15px;
+	color: white;
+	height: 35px;
+	width: 150px;
+	background-color: #fd8f44;
+	border: none;
+	border-radius: 35px;
+	text-transform: uppercase;
+	margin-bottom: 180px;
+}
+
+.reasons {
+	background-color: #fff;
+	height: 500px;
+}
+
+.reasons .list-title {
+	text-align: center;
+	padding-top: 50px;
+	font-size: 25px;
+	font-weight: 400;
+}
+
+.reasons .reasons-content {
+	margin-top: 30px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	width: 800px;
+}
+
+.reasons .reasons-content .reasons-item {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	font-size: 12px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	width: 400px;
+}
+
+.reasons .reasons-content .reasons-item h3 {
+	font-size: 16px;
+	line-height: 36px;
+}
+
+.reasons .reasons-content .reasons-item p {
+	font-size: 12px;
+}
+
+.reasons .reasons-content .reasons-item i {
+	width: 40px;
+	height: 40px;
+	padding: 30px;
+	font-size: 40px;
+	color: #fd8f44;
+}
+
+.book-center {
+	background-image: url('./images/page01_img03.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 450px;
+	background-color: #ecf4f7;
+	background-position: 200px center;
+	background-size: 27% 60%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.book-center .book-center-content {
+	width: 380px;
+	margin-right: 180px;
+	font-weight: 400;
+}
+
+.book-center .book-center-content .slogan {
+	font-size: 28px;
+}
+
+.book-center .book-center-content .desc {
+	margin-top: 10px;
+	font-size: 20px;
+}
+
+.book-center .book-center-content .more {
+	margin-top: 10px;
+	font-size: 12px;
+}
+
+.email {
+	height: 200px;
+	text-align: center;
+	margin-top: 50px;
+	color: white;
+}
+
+.email h3 {
+	font-size: 25px;
+}
+
+.email p {
+	margin-top: 10px;
+	font-size: 12px;
+}
+
+.email form {
+	margin-top: 20px;
+}
+
+.email form input {
+	height: 35px;
+	width: 300px;
+	border-radius: 35px;
+}
+
+.email form .register {
+	margin-left: 15px;
+	margin-top: 15px;
+	color: white;
+	height: 35px;
+	width: 150px;
+	background-color: #fd8f44;
+	border: none;
+	border-radius: 35px;
+	text-transform: uppercase;
+	margin-bottom: 180px;
+}
+
+.testimonial {
+	color: white;
+	height: 350px;
+	background-color: #e76f33;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	text-align: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.testimonial h3 {
+	font-size: 25px;
+	font-weight: 400;
+}
+
+.testimonial .testimonial-content {
+	width: 500px;
+}
+
+.testimonial .testimonial-content img {
+	margin-top: 20px;
+}
+
+.testimonial .testimonial-content em {
+	display: inline-block;
+	margin: 20px;
+	font-weight: 400;
+}
+
+.testimonial .testimonial-content .name {
+	font-size: 10px;
+	font-weight: 500;
+}
+
+footer {
+	color: white;
+	height: 150px;
+	background-color: #272727;
+}
+
+footer .upper {
+	width: 800px;
+	height: 80px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+footer .upper .logo {
+	font-size: 25px;
+	display: inline-block;
+	vertical-align: text-top;
+	margin-bottom: 10px;
+	margin-left: 0;
+}
+
+footer .upper .nav {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	vertical-align: top;
+}
+
+footer .upper .nav nav {
+	margin: 0 15px;
+	font-size: 13px;
+}
+
+footer .upper .social i {
+	margin: 0 3px;
+	font-size: 5px;
+	vertical-align: bottom;
+}
+
+footer .lower {
+	margin-top: 10px;
+	width: 800px;
+	font-size: 8px;
+	color: #b1adad;
+}
+
+footer .lower p {
+	margin-top: 20px;
+}
+
+footer .lower p span {
+	color: white;
+	font-weight: 500;
+}

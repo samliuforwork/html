@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        .wrap{
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 120px;
+        }
+        body{
+            margin-top: 60px;
+        }
+
+        .page-header{
+            width: 100%;
+            max-width: 1200px;
+            height: 60px;
+            padding: 0px 15px;
+            margin: 0 120px;
+            box-sizing: border-box;
+            background-color: rgb(1,60,90);
+            display: flex;
+            position: fixed;
+            align-items: center;
+            justify-content: space-around;
+            top: 0;
+        }
+
+        .narbar-brand{
+            text-align: center;
+            font-size: 26px;
+        }
+
+        .narbar-brand a{
+            color: white;
+            text-decoration: none;
+        }
+
+        .narbar-nav{
+            display: flex;
+            
+        }
+        .narbar-nav a{
+            text-decoration: none;
+            margin-left: 30px;
+            color: #66b8e0;
+        }
+
+        .narbar-nav .home a{
+            color: white;
+        }
+
+        .narbar-nav a:hover{
+            color: white;
+        }
+
+        .contact-info a{
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+        }
+
+        .page-content{
+            background-color: rgb(1,60,90);
+            background-image: url('./images/page01_img01.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            padding: 16px 15px 438px 15px;
+        }
+        .container{
+            text-align: center;
+            margin-top: 100px;
+        }
+        .container h1{
+            color: white;
+            font-size: 48px;
+        }
+        .container h5{
+            color: #66b8e0;
+            font-size: 18px;
+        }
+        .container a{
+            justify-content: center;
+            background-color: #ffaa00;
+            margin: 20px;
+            padding: 15px 55px 15px;
+            color: white;
+            border-radius: 50px;
+            text-decoration: none;
+            line-height: 2;
+            display: inline-block;
+        }
+        .page-content-second{
+            height: 600px;
+            background-color: #edf4f8;
+            display: flex;
+            text-align: left;
+
+        }
+        .col-img{
+            width: 600px;
+            padding-top: 100px;
+            padding-right: 15px;
+            
+        }
+        .col-img img{
+            width: 100%;
+        }
+        .col-info{
+            width: 600px;
+            padding: 100px 15px;
+            background-color: #edf4f8;
+        }
+        .col-info h2{
+            white-space:nowrap;
+            font-size: 40px;
+        }
+        .col-info h3{
+            margin-top: 20px;
+        }
+        .col-info p{
+            margin-top: 20px;
+        }
+        .col-info a{
+            justify-content: center;
+            background-color: #ffaa00;
+            margin: 20px 0px;
+            padding: 15px 55px 15px;
+            color: white;
+            border-radius: 50px;
+            text-decoration: none;
+            line-height: 2;
+            display: inline-block;
+        }
+        .page-content-2column{
+            height: 640px;
+            background-color: white;
+        }
+        .text-center{
+            background-color: white;
+            margin-top: 100px;
+        }
+        .text-center h2{
+            text-align: center;
+            vertical-align: top;
+            font-size: 40px;
+        }
+        .row{
+            padding: 0 15px;
+            display: flex;
+        }
+        .column-world{
+            width: 579px;
+        }
+        .column-education{
+            width: 579px;
+        }
+        .box{
+            display: flex;
+            margin-top: 74px;
+            padding: 0 15px;
+        }
+        .box-icon{
+            padding-right: 20px;
+        }
+        .box-body h4{
+            font-size: 22px;
+        }
+
+        .page-content-ourbook{
+            height: 600px;
+            background-color: #edf4f8;
+            display: flex;
+        }
+        .page-content-ourbook .col-img{
+            width: 500px;
+            padding: 100px 15px;
+        }
+
+        .page-content-ourbook .col-img img{
+            width: 100%;
+            height: auto;
+            text-align: left;
+        }
+        .page-content-ourbook .col-info{
+            padding: 100px 15px 50px 100px;
+            background-color: #edf4f8;
+        }
+        .page-content-ourbook .col-info h2{
+            white-space:nowrap;
+            font-size: 40px;
+        }
+        .page-content-ourbook .col-info h3{
+            margin-top: 25px;
+            font-size: 32px;
+        }
+        .page-content-ourbook .col-info p{
+            margin-top: 25px;
+            font-size: 16px;
+        }
+
+        .page-content-email-course{
+            width: 1200px;
+            height: 400px;
+            background-color: rgb(1,60,90);
+        }
+
+        .title{
+            text-align: center;
+            vertical-align: top;
+            font-size: 25px;
+            color: #ffffff;
+            padding-top: 100px;
+        }
+
+        .title h5{
+            text-align: center;
+            vertical-align: top;
+            font-size: 15px;
+            color: #66b8e0;
+            margin-top: 20px;
+        }
+        .container-add-email{
+            text-align: center;
+            margin-top: 25px;
+        }
+        .add-email .btn{
+            padding: 25px 60px;
+            margin: 30px 15px;
+            background: #ffaa00;
+            color: #ffffff;
+            border-radius: 30px;
+            cursor: pointer;
+            line-height: 1px;
+            text-decoration: none;
+            border: none;
+            font-size: 15px;
+        }
+        .add-email input{
+            width: 434px;
+            height: 34px;
+            padding: 8px 18px;
+            background-color: #fff;
+            color: #fdfdfd;
+            border-radius: 30px;
+            border: none;
+            font-size: 15px;
+        }
+        .page-content-2textcenter{
+            background-color: #e76e33;
+        }
+
+        .page-content-2textcenter .text {
+            text-align: center;
+            margin-top: 25px;
+            font-size: 20px;
+            color: #ffffff;
+        }
+        .page-content-2textcenter .text cite{
+            text-align: center;
+            margin-top: 25px;
+            font-size: 16px;
+            color: #ffffff;
+        }
+        .img-symbol{
+            text-align: center;
+            margin-top: 25px;
+        }
+        .dots{
+            text-align: center;
+            margin-top: 25px;
+            padding-bottom: 100px;
+        }
+        .dot{
+            border-radius: 50%;
+            margin-left: 8px;
+            width: 12px;
+            height: 12px;
+            display: inline-block;
+            background-color: #fff;
+            outline: none;
+            cursor: pointer;
+        }
+
+        .dot + .dot{
+            background-color: #f38b59;
+            transition: 0.3s all ease;
+        }
+
+        .dot + .dot:hover{
+            background-color: #ffffff;
+            transition: 0.3s all ease;
+        }
+
+        .page-footer{
+            background-color: black;
+            color:#7d7d7d;
+        }
+
+        .footer-container{
+            display: flex;
+            border-bottom: 1px solid #7d7d7d;
+            padding: 25px 15px;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .footer-container .narbar-brand{
+            text-align: center;
+            font-size: 26px;
+        }
+        .footer-container .narbar-nav a:hover{
+            color: white;
+        }
+
+        .sns-icon img{
+            width: 20px;
+            height: 20px;
+            margin-left: 8px;
+        }
+        .sns-icon img:hover{
+           color: #f38b59;
+        }
+
+        .footer-container-copyright{
+            padding: 20px 15px 30px;
+            font-size: 13px;
+            line-height: 21px;
+            vertical-align: baseline;
+        }
+        .footer-container .narbar-nav a{
+            color: #7d7d7d;
+        }
+        .footer-container .narbar-nav .home a{
+            color: #ffffff;
+        }
+        .copyright a{
+            text-align: center;
+            text-decoration: none;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-header">
+        <div class="narbar-brand">
+            <a href="#" class="brandname">Langerba</a>
+        </div>
+        <ul class="narbar-nav">
+            <li class="home"><a href="#">HOME</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact us</a></li>
+        </ul>
+        <div class="contact-info">
+            <nav><a href="call">+1 800 598 78 87</a></nav>
+        </div>
+    </div>
+
+    <div class="wrap">
+
+        <div class="page-content">
+            <div class="bg-image"></div>
+            <div class="container">
+                <h1>Open the world of opportunities!</h1>
+                <h5>Learn to communicate with the world around  you.</h5>
+                <a href="#">REIGSTER NOW</a>
+            </div>
+        </div>
+
+        <div class="page-content-second">
+            <div class="col-info">
+                <h2>Studying Foreign Languages</h2>
+                <h3>Every foreign language has its ownmomentum.</h3>
+                <p>The more you learn, the more you want to learn. Say you love Italian food and decide to study Italian. At first it's hard. But one day you meet some Italian tourists on the bus and you understand enough to point them towards their hotel. Before you part ways, they give you their e-mail address. Now you can easily communicate with them and study some more.</p>
+                <a href="#">REIGSTER NOW</a>
+            </div>
+            <div class="col-img"><img src="./images/page01_img02.png" alt="study-foreign-language"></div>
+        </div>
+
+        <div class="page-content-2column">
+            <div class="text-center">
+                <h2>6 reasons to start learn language</h2>
+            </div>
+            <div class="row">
+                <div class="column-world">
+                    <div class="box">
+                        <div class="box-icon">
+                            <img src="./11:12hw-icon/world-grid.png" alt="world">
+                        </div>
+                        <div class="box-body">
+                            <h4>English is spoken all over the world</h4>
+                            <p>English is not the most widely spoken language (that title goes to Chinese), but it does come in third, after Spanish.<br>And the number of 335 million native speakers is respectable.</p> 
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box-icon">
+                            <img src="./11:12hw-icon/mortarboard.png" alt="education">
+                        </div>
+                        <div class="box-body">
+                            <h4>Education and research opportunities</h4>
+                            <p>Thinking of studying abroad or publishing a research paper? Chances are you will decide to learn English at some point along the way, or to study at your chosen institution.</p> 
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box-icon">
+                            <img src="./11:12hw-icon/image-gallery.png" alt="image">
+                        </div>
+                        <div class="box-body"> 
+                            <h4>The language of cinema and music</h4>
+                            <p>If you like going to the movies and are a fan of sitcoms, then English should be on your list. That’s because so many of the world’s films are written and produced in English.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column-education">
+                    <div class="box">
+                        <div class="box-icon">
+                            <img src="./11:12hw-icon/briefcase.png" alt="bag">
+                        </div>
+                        <div class="box-body"> 
+                            <h4>International business requires English</h4>
+                            <p>In terms of international commerce, English is the language to learn. When the Chinese do business in Egypt, the negotiations and transactions happen in English.</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box-icon">
+                            <img src="./11:12hw-icon/globe.png" alt="travel">
+                        </div>
+                        <div class="box-body">
+                            <h4>A perfect language for traveling</h4>
+                            <p>If you travel often, you’ll note signs tend to come in the local tongue first and English second. That’s because English is considered the most popular international language.</p> 
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box-icon">
+                            <img src="./11:12hw-icon/book.png" alt="book">
+                        </div>
+                        <div class="box-body">
+                            <h4>Hemingway and Harry Potter</h4>
+                            <p>English has been around for a long time and English speaking writers have always been a fairly prolific bunch, both in Great Britain and the United States.</p> 
+                        </div>
+                    </div>
+                </div>   
+            </div>
+        </div>
+
+        <div class="page-content-ourbook">
+            <div class="col-img"><img src="./images/page01_img03.png" alt="ourbook"></div>
+            <div class="col-info">
+                <h2>Our Book Center is an official <br> distributor of Oxford <br> University Press</h2>
+                <h3>We offer a wide range of books for teachers and students.</h3>
+                <p>The Book Center provides schools, language centers, colleges and universities with English teaching materials from Seattle to Miami. Our dealers work in almost all states.</p>
+            </div>
+        </div>
+
+        <div class="page-content-email-course">
+            <div class="title">
+                <h2>Get your free e-mail course!</h2>
+                <h5>30 lessons per week, Upper-Intermediate to Advanced levels, course length: 4, 8-12 weeks</h5>
+            </div>
+            <div class="container-add-email">
+                <form class="add-email">
+                  <input type="email" placeholder="Enter your e-mail" autocomplete='off' required />
+                  <button class="btn">I WANT A COURSE</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="page-content-2textcenter">
+            <div class="title">
+                <h2>What our students are saying</h2>
+            </div>
+            <div class="img-symbol">
+                <img src="./images/page01_img04.png" alt="symbol">
+            </div>
+            <div class="text">
+                <p>Two unforgettable weeks in Langerba! I would like to thank all<br>
+                    the teachers for their positive spirit, amazing lessons and high<br>
+                    professionalism. I will miss our lessons!</p>
+                <cite>Anthony Little</cite>
+            </div>
+            <div class="dots">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </div>
+
+        <footer class="page-footer">
+            <div class="footer-container">
+                <div class="narbar-brand">
+                    <a href="#" class="brandname">Langerba</a>
+                </div>
+                <ul class="narbar-nav">
+                    <li class="home"><a href="#">HOME</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+                <div class="sns">
+                    <a href="#" class="sns-icon"><img src="./11:12hw-icon/facebook.png" alt="facebook"></a>
+                    <a href="#" class="sns-icon"><img src="./11:12hw-icon/twitter.png" alt="twitter"></a>
+                    <a href="#" class="sns-icon"><img src="./11:12hw-icon/google-plus.png" alt="google"></a>
+                    <a href="#" class="sns-icon"><img src="./11:12hw-icon/instagram.png" alt="insta"></a>
+                    <a href="#" class="sns-icon"><img src="./11:12hw-icon/linked-in-logo-of-two-letters.png" alt="in"></a>
+                </div>
+            </div>
+            <div class="footer-container-copyright">
+                <p class="copyright">
+                    2016. All Langerba financings are subject to eligibility, credit and underwriting approval. The programs advertised on this page are not a commitment or guarantee from Langerba to provide funds. Programs, rates and other terms & conditions on this page are subject to change without notice.  
+                    <a href="#" class="policy">Privacy Policy</a>
+                </p>
+            </div>
+        </footer>
+    </div>
+    
+</body>
+</html>

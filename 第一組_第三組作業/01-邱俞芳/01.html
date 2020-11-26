@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        .contact{
+            text-align: center;
+        }
+        .row{
+            align-items: center;
+        }
+        body {
+            font-size: 100%;
+        }     
+        h1 {
+            font-size: 1.5em;
+            text-align: center;
+        }      
+        h2 {
+            font-size: 2.5em;
+            text-align: center;
+            padding: 1em;
+        }
+        h3{
+            font-size: 1.5em;
+            text-align: center;
+        }   
+        p {
+            font-size: 0.9em;
+            padding: 1em;
+            line-height: 1.25em;
+            color: #7d7d7d;
+        }
+        .txt {
+            text-align: center;
+        }
+        .title h2{
+            color: #ffffff;
+        }
+        .title h5{
+            color: #66b8e0;
+        }
+        /* .pic{
+            height: 41.6%;
+        }
+        .pic img{
+            max-width: 100%;
+            margin: auto;
+        } */
+
+        .header{
+            width: 100%;
+            background-color: rgb(1,60,90);
+            position: fixed;
+            padding-bottom: 3%;
+            padding: 0.9em;
+            top: 0;
+        }
+        .navbar-nav{
+            text-align: center;
+        }
+        .navbar-brand a{
+            color: white;
+            text-decoration: none;
+        }
+        .navbar-nav a{
+            color: #66b8e0;
+            text-decoration: none;
+            padding: 15px;
+        }
+        .navbar-nav .home{
+            color: white;
+        }
+        .navbar-nav a:hover{
+            color: white;
+        }
+        .contact a{
+            text-decoration: none;
+            color: white;
+        }
+        .page_context{
+            width: 100%;
+            margin-top: 3%;
+        }
+        .open_world{
+            background-color: rgb(1,60,90);
+            background-image: url('./images/page01_img01.png');
+            background-size: cover;
+            background-position: center;
+            padding-bottom: 40%;
+        }
+        .open_world .container{
+            text-align: center;
+        }
+        .open_world .container h2{
+            color: white;
+        }
+        .open_world .container h5{
+            color: #66b8e0;
+            font-size: 18px;
+        }
+        .open_world .container a{
+            background-color: #ffaa00;
+            margin: 20px;
+            padding: 15px 55px 15px;
+            color: white;
+            border-radius: 50px;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .studing_language{
+            background-color: #edf4f8;
+        }
+        .studing_language .pic img{
+            width: 100%;
+            vertical-align: middle;
+        }    
+        .studing_language a{
+            background-color: #ffaa00;
+            margin: 20px;
+            padding: 15px 55px 15px;
+            color: white;
+            border-radius: 50px;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .reason_to_learn{
+            background-color: white;
+        }
+        .reason_to_learn .icon{
+            text-align: center;
+        }
+        .book_center{
+            background-color: #edf4f8;
+        }
+        .book_center .pic img{
+            width: 100%;
+        }
+        .book_center h3{
+            color: #666666;
+        }
+        .pic img{
+            width: 100%;
+        }
+        .email_course{
+            background-color: rgb(1,60,90);
+            text-align: center;
+            padding-bottom: 35px;
+        }
+        .email_course .submit input{
+            width: 15em;
+            background-color: #ffaa00;
+            color: #ffffff;
+            padding: 0.625em 1.25em;
+            border-radius: 30px;
+            text-decoration: none;
+            border: none;
+            font-size: 0.9em;
+        }
+        .email_course .email input{
+            width: 20em;
+            padding: 0.625em 1.25em;
+            background-color: #fff;
+            border-radius: 30px;
+            border: none;
+        }
+        .feedback{
+            background-color: #e76e33;
+        }
+        .feedback .txt h2{
+            color: #ffffff;
+        }
+        .feedback .txt p{
+            text-align: center;
+            color: #ffffff;
+        }
+        .feedback .txt cite{
+            text-align: center;
+            color: #ffffff;
+        }
+        .img-symbol{
+            text-align: center;
+        }
+        .dots{
+            text-align: center;
+        }
+        .dot{
+            border-radius: 50%;
+            margin-left: 0.5em;
+            width: 0.75em;
+            height: 0.75em;
+            display: inline-block;
+            background-color: #fff;
+            outline: none;
+            cursor: pointer;
+        }
+
+        .dot + .dot{
+            background-color: #f38b59;
+            transition: 0.3s all ease;
+        }
+
+        .dot + .dot:hover{
+            background-color: #ffffff;
+            transition: 0.3s all ease;
+        }
+        .page_footer{
+            background-color: black;
+        }
+        .footer-navbar-nav{
+            text-align: center;
+        }
+        .footer-navbar-nav a{
+            display: inline-block;
+            color: #7d7d7d;
+            text-decoration: none;
+            font-size: 0.6em;
+            padding: 15px;
+        }
+        .sns{
+            text-align: center;
+        }
+        .sns-icon img{
+            width: 20px;
+            height: 20px;
+            margin-left: 8px;
+        }
+
+        .footer-container-copyright{
+            text-align: center;
+            color: #7d7d7d;
+            font-size: 0.1em;
+        }
+        .copyright{
+            line-height: 15px;
+            text-align: left;
+        }
+        .copyright a{
+            text-decoration: none;
+            color: #fff;
+            font-size: 0.1em;
+        }
+        .page_footer .navbar-nav{
+            text-align: center;
+        }
+        hr{
+            color: #7d7d7d;
+        }
+
+        @media screen and (min-width: 992px){
+            .menu_btn{ 
+                display: none; 
+            }
+            #menu_control{
+                display: none; 
+            }
+            .contact-icon{
+                display: none;
+            }
+        }
+        @media screen and (min-width: 1200px){
+            .email_course .submit input{
+                width: 12em;
+                background-color: #ffaa00;
+                color: #ffffff;
+                padding: 0.625em 1.25em;
+                border-radius: 30px;
+                text-decoration: none;
+                border: none;
+                font-size: 0.9em;
+                display: block;
+            }
+            .email_course .email input{
+                width: 25em;
+                padding: 0.625em 1.25em;
+                background-color: #fff;
+                border-radius: 30px;
+                border: none;
+                display: block;
+                margin-left: auto;
+            }
+        }
+        @media screen and (max-width: 992px) {
+            .contact{
+                display: none;
+            }
+            .contact-icon{
+                width: 36px;
+                height: 36px;
+                top: 0px;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
+            }
+            .contact-icon img{
+                width: 100%;
+            }
+            h1 {
+                font-size: 1.5em;
+                text-align: center;
+                margin-left: 45px;
+            }      
+            #menu_control{
+                position: absolute;
+                z-index: -2;
+                opacity: 0;
+            }
+            .navbar-brand a{
+                display: block;
+            }
+            .menu_btn {
+                width: 40px;
+                height: 40px;
+                left: 15px;
+                background-color: rgb(1,60,90);
+                display: block;
+                position: absolute;
+                top: 0px;
+                bottom: 0;
+                margin: auto;
+            }
+            .menu_btn span{
+                opacity: 0;
+                width: 1px;
+                height: 1px;
+                display: block;
+                overflow: hidden;
+            }
+            .menu_btn::before{
+                content: '';
+                position: absolute;
+                height: 2px;
+                left: 2px;
+                width: 36px;
+                background-color: #ffffff;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                box-shadow: 0px 8px 0px #ffffff,
+                            0px -8px 0px #ffffff;
+            }
+            .navbar-nav{
+                width: 60%;
+                height: calc(100vh - 3em);
+                background-color: rgb(1,60,90);
+                position: absolute;
+                top: 65px;
+                left: -100%;
+                transition: .5s;
+            }
+            .navbar-nav a{
+                color: #66b8e0;
+                text-decoration: none;
+            }
+            .navbar-nav a{
+                display: block;
+                padding: 10px 20px;
+                text-align: left;
+            }
+            .studing_language h2, h3, p{
+                text-align: center;
+            }
+            .footer-navbar-nav{
+                flex-direction: column;
+                display: flex;
+            }
+            .footer-navbar-nav a{
+                display: inline-block;
+                font-size: 0.6em;
+                color: #7d7d7d;
+                text-decoration: none;
+                padding: 15px;
+            }
+            #menu_control:checked ~ .header .navbar-nav{
+                left: 0;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox" name="" id="menu_control">
+    <div class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <label for="menu_control" class="menu_btn">
+                        <span>選單</span>
+                    </label>
+                    <h1 class="navbar-brand">
+                        <a href="#">Langerba</a>
+                    </h1>
+                </div>
+                <div class="col-6">
+                    <nav class="navbar-nav">
+                        <a href="#" class="home">HOME</a>
+                        <a href="#">About us</a>
+                        <a href="#">Courses</a>
+                        <a href="#">Gallery</a>
+                        <a href="#">Contact us</a>
+                    </nav>
+                </div>
+                <div class="col-3">
+                    <div class="contact">
+                        <a href="#">+1 800 598 78 87</a>
+                    </div>
+                    <div class="contact-icon">
+                        <a href="#"><img src="./icon/phone-call.png" alt="phone"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page_context">
+        <section class="open_world">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-12">
+                        <h2>Open the world of opportunities!</h2>
+                        <h5>Learn to communicate with the world around  you.</h5>
+                        <a href="#">REIGSTER NOW</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="studing_language">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-12 col-xl-6">
+                        <div class="txt">
+                            <h2>Studying Foreign Languages</h2>
+                            <h3>Every foreign language has its ownmomentum.</h3>
+                            <p>The more you learn, the more you want to learn. Say you love Italian food and decide to study Italian. At first it's hard. But one day you meet some Italian tourists on the bus and you understand enough to point them towards their hotel. Before you part ways, they give you their e-mail address. Now you can easily communicate with them and study some more.</p>
+                            <a href="#">REIGSTER NOW</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-6">
+                        <div class="pic">
+                            <img src="./images/page01_img02.png" alt="study-foreign-language">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="reason_to_learn">
+            <div class="container">
+                <div class="row g-3">
+                    <div class="col-12">
+                        <h2>6 reasons to start learn language</h2>
+                    </div>
+                </div>
+
+                <div class="row g-3">
+                    <div class="col-12 col-xl-1">
+                        <div class="icon"><img src="./icon/world-grid.png" alt="world"></div>
+                    </div>
+                    <div class="col-12 col-xl-5">
+                        <div class="txt">
+                            <h3>English is spoken all over the world</h3>
+                            <p>English is not the most widely spoken language (that title goes to Chinese), but it does come in third, after Spanish.<br>And the number of 335 million native speakers is respectable.</p> 
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-1">
+                        <div class="icon"><img src="./icon/briefcase.png" alt="briefcase"></div>
+                    </div>
+                    <div class="col-12 col-xl-5">
+                        <div class="txt"> 
+                            <h3>International business requires English</h3>
+                            <p>In terms of international commerce, English is the language to learn. When the Chinese do business in Egypt, the negotiations and transactions happen in English.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-3">
+                    <div class="col-12 col-xl-1">
+                        <div class="icon"><img src="./icon/mortarboard.png" alt="education"></div>
+                    </div>
+                    <div class="col-12 col-xl-5">
+                        <div class="txt">
+                            <h3>Education and research opportunities</h3>
+                            <p>Thinking of studying abroad or publishing a research paper? Chances are you will decide to learn English at some point along the way, or to study at your chosen institution.</p> 
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-1">
+                        <div class="icon"><img src="./icon/globe.png" alt="globe"></div>
+                    </div>
+                    <div class="col-12 col-xl-5">
+                        <div class="txt"> 
+                            <h3>A perfect language for traveling</h3>
+                            <p>If you travel often, you’ll note signs tend to come in the local tongue first and English second. That’s because English is considered the most popular international language.</p> 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row g-3">
+                    <div class="col-12 col-xl-1">
+                        <div class="icon"><img src="./icon/image-gallery.png" alt="gallery"></div>
+                    </div>
+                    <div class="col-12 col-xl-5">
+                        <div class="txt">
+                            <h3>The language of cinema and music</h3>
+                            <p>If you like going to the movies and are a fan of sitcoms, then English should be on your list. That’s because so many of the world’s films are written and produced in English.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-1">
+                        <div class="icon"><img src="./icon/book.png" alt="book"></div>
+                    </div>
+                    <div class="col-12 col-xl-5">
+                        <div class="txt"> 
+                            <h3>International business requires English</h3>
+                            <p>In terms of international commerce, English is the language to learn. When the Chinese do business in Egypt, the negotiations and transactions happen in English.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="book_center">
+            <div class="container">
+                <div class="row g-3">
+                    <div class="col-12 col-xl-6">
+                        <div class="pic">
+                            <img src="./images/page01_img03.png" alt="ourbook">
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-6">
+                        <div class="txt">
+                            <h2>Our Book Center is an official distributor of Oxford University Press</h2>
+                            <h3>We offer a wide range of books for teachers and students.</h3>
+                            <p>The Book Center provides schools, language centers, colleges and universities with English teaching materials from Seattle to Miami. Our dealers work in almost all states.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="email_course">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-12">
+                        <div class="title">
+                            <h2>Get your free e-mail course!</h2>
+                            <h5>30 lessons per week, Upper-Intermediate to Advanced levels, course length: 4, 8-12 weeks</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-8">
+                    <div class="email col-12 col-xl-7">
+                        <input type="email" placeholder="Enter your e-mail" autocomplete='off' required />
+                    </div>
+                    <div class="submit col-12 col-xl-5">
+                        <input type="button" value="I WANT A COURSE">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="feedback">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-12">
+                        <div class="txt">
+                            <h2>What our students are saying
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-3">
+                    <div class="col-12">
+                        <div class="img-symbol">
+                            <img src="./images/page01_img04.png" alt="symbol">
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-3">
+                    <div class="col-12">
+                        <div class="txt">
+                            <p>Two unforgettable weeks in Langerba! I would like to thank all
+                            the teachers for their positive spirit, amazing lessons and high
+                            professionalism. I will miss our lessons!</p>
+                            <cite>Anthony Little</cite>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-6">
+                    <div class="col-12">
+                    	<div class="dots">
+                    	    <div class="dot"></div>
+                    	    <div class="dot"></div>
+                    	    <div class="dot"></div>
+                    	    <div class="dot"></div>
+                    	    <div class="dot"></div>
+                    	</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="page_footer">
+            <div class="container">
+                <div class="row g-3">
+                    <div class="col-12 col-xl-3">
+                        <h3 class="navbar-brand">
+                            <a href="#">Langerba</a>
+                        </h3>
+                    </div>
+                    <div class="col-12 col-xl-6">
+                        <div class="footer-navbar-nav">
+                            <a href="#" class="home">HOME</a>
+                            <a href="#">About us</a>
+                            <a href="#">Courses</a>
+                            <a href="#">Gallery</a>
+                            <a href="#">Contact us</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-3">
+                        <div class="sns">
+                            <a href="#" class="sns-icon"><img src="./icon/facebook.png" alt="facebook"></a>
+                            <a href="#" class="sns-icon"><img src="./icon/twitter.png" alt="twitter"></a>
+                            <a href="#" class="sns-icon"><img src="./icon/google-plus.png" alt="google"></a>
+                            <a href="#" class="sns-icon"><img src="./icon/instagram.png" alt="insta"></a>
+                            <a href="#" class="sns-icon"><img src="./icon/linked-in-logo-of-two-letters.png" alt="in"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <hr>
+        <div class="container">
+            <div class="row g-3">
+                <div class="col-12">
+                    <div class="footer-container-copyright">
+                        <p class="copyright">
+                            2016. All Langerba financings are subject to eligibility, credit and underwriting approval. The programs advertised on this page are not a commitment or guarantee from Langerba to provide funds. Programs, rates and other terms & conditions on this page are subject to change without notice.
+                            <a href="#" class="policy">Privacy Policy</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

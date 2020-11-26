@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .items{
+            height: 200px;
+            width: 31.25%; 
+            margin: 1.0417%;
+            background-color: pink;        }
+            寬度為31.25%是因為每張圖300px,佔據父層寬度960的31.25%；margin則為10.42%
+        .wrap{
+            width: 960px;
+            border: solid 2px black;
+        }
+        @media screen and (min-width: 768px){
+            .wrap{
+                display:flex;
+                flex-wrap: wrap;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="items"><img src="https://picsum.photos/300/200/?random=1"></div>
+        <div class="items"><img src="https://picsum.photos/300/200/?random=2"></div>
+        <div class="items"><img src="https://picsum.photos/300/200/?random=3"></div>
+        <div class="items"><img src="https://picsum.photos/300/200/?random=4"></div>
+        <div class="items"><img src="https://picsum.photos/300/200/?random=5"></div>
+    </div>
+
+</body>
+</html>
